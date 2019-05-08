@@ -1,7 +1,15 @@
 /* Universal */
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Quicksand';
+}
+
+ol, ul {
+  margin: 0;
 }
 
 /* Font Face */
@@ -42,12 +50,20 @@ body {
 /* Header */
 
 header {
-  display: flex;
   background-color: #0a5c8f;
   color: white;
+  height: 8rem;
+  border-bottom: 1px solid white;
 }
 
 a {
+  color: white;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #e1afb4;
   color: white;
 }
 
@@ -55,6 +71,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 8rem;
 }
 
 nav div {
@@ -72,4 +89,16 @@ nav li {
   list-style: none;
   font-size: 1.5rem;
   padding-right: 1rem;
+}
+
+header img {
+  width: 5rem;
+}
+
+.logo {
+  padding-left: 15rem;
+}
+
+.menu {
+  padding-right: 15rem;
 }
