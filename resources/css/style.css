@@ -111,7 +111,7 @@ header img {
   margin: auto;
   color: white;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: 'Montserrat';
   font-weight: bold;
   padding-top: 2.3rem;
@@ -123,4 +123,19 @@ header img {
 
 .blue {
   color: #9fd1d6;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-color: #ececec;
+}
+
+.inside {
+  background-color: white;
+  width: 70rem;
+  height: 25rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
