@@ -5,11 +5,19 @@ html {
 }
 
 body {
-  font-family: 'Quicksand';
+  font-family: 'Montserrat';
 }
 
 ol, ul {
   margin: 0;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.text-content {
+  align-items: center;
 }
 
 /* Font Face */
@@ -53,16 +61,13 @@ header {
   background-color: #0a5c8f;
   color: white;
   height: 8rem;
-  border-bottom: 1px solid white;
 }
 
 a {
   color: white;
 }
 
-a:hover {
-  font-weight: bold;
-  text-decoration: none;
+header a:hover {
   border-bottom: 2px solid #e1afb4;
   color: white;
 }
@@ -97,6 +102,7 @@ header img {
 
 .logo {
   padding-left: 15rem;
+  font-family: 'Quicksand'
 }
 
 .menu {
@@ -112,7 +118,6 @@ header img {
   color: white;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Montserrat';
   font-weight: bold;
   padding-top: 2.3rem;
   padding-bottom: 2.3rem;
@@ -129,6 +134,11 @@ header img {
 
 .jumbotron {
   background-color: #ececec;
+  margin: 0;
+}
+
+.jumbotron p {
+  margin-bottom: 2rem;
 }
 
 .inside {
@@ -138,4 +148,44 @@ header img {
   margin: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #0a5c8f;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: white;
+  color: #0a5c8f;
+  font-weight: bold;
+}
+
+.inside a:hover {
+  text-decoration: none;
+}
+
+/* Stip */
+
+.strip {
+  background-color: #e1afb4;
+  height: 15rem;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 4rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strip .text-content {
+  margin: 2rem;
 }
