@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Karla';
 }
 
 ol, ul {
@@ -18,6 +18,7 @@ ol, ul {
 
 .text-content {
   align-items: center;
+  padding: 5rem;
 }
 
 /* Font Face */
@@ -27,9 +28,7 @@ ol, ul {
   font-weight: 400;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
+}@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -41,7 +40,8 @@ ol, ul {
   font-weight: 900;
   src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_epG3gnD_g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
+}
+@font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -54,22 +54,46 @@ ol, ul {
   src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v9/6xKodSZaM9iE8KbpRA_pkHEYT8L_.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Karla Bold'), local('Karla-Bold'), url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v4/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v4/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* Header */
 
 header {
-  background-color: #0a5c8f;
-  color: white;
+  color: #0a5c8f;
   height: 8rem;
 }
 
 a {
-  color: white;
+  color: #0a5c8f;
 }
 
 header a:hover {
   border-bottom: 2px solid #e1afb4;
-  color: white;
 }
 
 nav {
@@ -85,7 +109,7 @@ nav div {
 }
 
 nav span {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-left: 1rem;
 }
 
@@ -97,7 +121,7 @@ nav li {
 }
 
 header img {
-  width: 5rem;
+  width: 4rem;
 }
 
 .logo {
@@ -113,24 +137,24 @@ header img {
 
 .banner {
   background-color: #2f2e2e;
-  width: 103rem;
   margin: auto;
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding-top: 2.3rem;
-  padding-bottom: 2.3rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   line-height: 4.5rem;
+  font-family: 'Montserrat';
 }
 
 .blue {
   color: #9fd1d6;
 }
 
-/* Jumbotron */
+/* Jumbotron
 
 .jumbotron {
   background-color: #ececec;
@@ -139,6 +163,7 @@ header img {
 
 .jumbotron p {
   margin-bottom: 2rem;
+  font-size: 1.3rem;
 }
 
 .inside {
@@ -171,15 +196,17 @@ button:hover {
   text-decoration: none;
 }
 
+*/
+
 /* Stip */
 
 .strip {
   background-color: #e1afb4;
-  height: 15rem;
+  height: 7rem;
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3rem;
   letter-spacing: 0.2rem;
   display: flex;
   align-items: center;
