@@ -68,18 +68,22 @@ ol, ul {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Kollektif';
+  src: ('../../../../../downloads/fonts/Kollektif.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
-  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v4/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }@font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Kollektif';
+  src: ('../../../../../downloads/fonts/Kollektif-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
-  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v4/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Kollektif';
+  src: ('../../../../../downloads/fonts/Kollektif-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
 }
+
 
 /* Header */
 
@@ -126,7 +130,7 @@ header img {
 
 .logo {
   padding-left: 15rem;
-  font-family: 'Quicksand'
+  font-family: 'Kollektif','Quicksand';
 }
 
 .menu {
@@ -136,22 +140,20 @@ header img {
 /* Banner */
 
 .banner {
-  background-color: #2f2e2e;
+  background-color: #ececec;
   margin: auto;
-  color: white;
+  color: #2f2e2e;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   line-height: 4.5rem;
   font-family: 'Montserrat';
 }
 
-.blue {
-  color: #9fd1d6;
+.special {
+  color: #c4d4e7;
 }
 
 /* Jumbotron
@@ -201,7 +203,7 @@ button:hover {
 /* Stip */
 
 .strip {
-  background-color: #e1afb4;
+  background-color: #c4d4e7;
   height: 7rem;
   color: white;
   font-size: 1.5rem;
@@ -216,3 +218,28 @@ button:hover {
 .strip .text-content {
   margin: 2rem;
 }
+
+/* Gallery */
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    align-items: center;
+    background-color: #ececec;
+  }
+
+  .gallery img {
+    height: 30rem;
+  }
+
+  .w3-button {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .w3-button:hover{
+    color: white!important;
+    background-color: #c4d4e7!important;
+  }
