@@ -21,6 +21,10 @@ ol, ul {
   padding: 5rem;
 }
 
+.subtitle {
+  font-size: 3rem;
+}
+
 /* Font Face */
 @font-face {
   font-family: 'Montserrat';
@@ -242,4 +246,14 @@ button:hover {
   .w3-button:hover{
     color: white!important;
     background-color: #c4d4e7!important;
+  }
+
+  .w3-left, .w3-right, .w3-badge {
+    cursor: pointer;
+  }
+
+  .w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
   }
