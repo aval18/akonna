@@ -25,6 +25,10 @@ ol, ul {
   font-size: 3rem;
 }
 
+  i {
+    padding: 1rem;
+  }
+
 /* Font Face */
 @font-face {
   font-family: 'Montserrat';
