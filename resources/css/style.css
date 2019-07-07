@@ -25,9 +25,6 @@ ol, ul {
   font-size: 3rem;
 }
 
-  i {
-    padding: 1rem;
-  }
 
 /* Font Face */
 @font-face {
@@ -164,50 +161,6 @@ header img {
   color: #c4d4e7;
 }
 
-/* Jumbotron
-
-.jumbotron {
-  background-color: #ececec;
-  margin: 0;
-}
-
-.jumbotron p {
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
-}
-
-.inside {
-  background-color: white;
-  width: 70rem;
-  height: 25rem;
-  margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-button {
-  background-color: #0a5c8f;
-  color: white;
-  border: none;
-  border-radius: 2rem;
-  padding: 1rem;
-}
-
-button:hover {
-  background-color: white;
-  color: #0a5c8f;
-  font-weight: bold;
-}
-
-.inside a:hover {
-  text-decoration: none;
-}
-
-*/
-
 /* Stip */
 
 .strip {
@@ -227,6 +180,52 @@ button:hover {
   margin: 2rem;
 }
 
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url();
+  margin: 0;
+  font-family: "Kollektif";
+}
+
+.jumbotron p {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.inside {
+  background-color: white;
+  width: 35rem;
+  height: 27rem;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 10rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn a {
+  background-color: #0a5c8f;;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+  .btn a {
+    color: white;
+  }
+
+.btn a:hover {
+  text-decoration: none;
+  color: #0a5c8f;
+  background-color: white;
+  font-weight: bold;
+}
+
+
 /* Gallery */
 
   .gallery {
@@ -237,27 +236,23 @@ button:hover {
     background-color: #ececec;
   }
 
-  .gallery img {
-    height: 30rem;
+  .gallery span {
+    padding: 2rem;
   }
 
-  .w3-button {
-    height: 4rem;
-    width: 4rem;
-    margin: 0 2rem 0 2rem;
+/* Footer */
+
+  footer {
+    border-top: 5px solid #0a5c8f;
+    text-align: center;
   }
 
-  .w3-button:hover{
-    color: white!important;
-    background-color: #c4d4e7!important;
+/* Page shop */
+
+  #shop .btn {
+    padding-top: 2rem;
   }
 
-  .w3-left, .w3-right, .w3-badge {
-    cursor: pointer;
-  }
-
-  .w3-badge {
-    height:13px;
-    width:13px;
-    padding:0
+  .product {
+    width: 25%;
   }
