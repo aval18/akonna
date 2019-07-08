@@ -19,6 +19,7 @@ ol, ul {
 .text-content {
   align-items: center;
   padding: 5rem;
+  text-align: center;
 }
 
 .subtitle {
@@ -253,6 +254,45 @@ header img {
     padding-top: 2rem;
   }
 
+  #shop .jumbotron {
+    background-image: url("../images/k-heart black.jpeg");
+    background-position: center;
+  }
+
+  .product .text-content {
+    padding: 3rem;
+    background-color: #0a5c8f;
+    color: white;
+  }
+
+  .product .text-content span {
+    display: block;
+  }
+
+  .all-products {
+      margin: 3rem 6rem;
+  }
+
   .product {
     width: 25%;
+    margin-bottom: 3rem;
+  }
+
+  .product img {
+    height: auto;
+    width: 100%;
+  }
+
+  .row-1 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .row-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .name {
+    font-size: 2rem;
   }
