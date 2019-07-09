@@ -241,13 +241,6 @@ header img {
     padding: 2rem;
   }
 
-/* Footer */
-
-  footer {
-    border-top: 5px solid #0a5c8f;
-    text-align: center;
-  }
-
 /* Page shop */
 
   #shop .btn {
@@ -260,7 +253,7 @@ header img {
   }
 
   .product .text-content {
-    padding: 3rem;
+    padding: 2rem;
     background-color: #0a5c8f;
     color: white;
   }
@@ -296,3 +289,14 @@ header img {
   .name {
     font-size: 2rem;
   }
+
+  /* About */
+
+
+
+  /* Footer */
+
+    footer {
+      border-top: 5px solid #0a5c8f;
+      text-align: center;
+    }
