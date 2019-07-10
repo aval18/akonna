@@ -143,6 +143,18 @@ header img {
   padding-right: 15rem;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+  }
+}
+
 /* Banner */
 
 .banner {
@@ -160,6 +172,12 @@ header img {
 
 .special {
   color: #c4d4e7;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .banner {
+    line-height: 3rem;
+  }
 }
 
 /* Stip */
@@ -180,6 +198,8 @@ header img {
 .strip .text-content {
   margin: 2rem;
 }
+
+
 
 /* Jumbotron */
 
@@ -227,6 +247,7 @@ header img {
 }
 
 
+
 /* Gallery */
 
   .gallery {
@@ -240,6 +261,8 @@ header img {
   .gallery span {
     padding: 2rem;
   }
+
+
 
 /* Page shop */
 
@@ -290,6 +313,8 @@ header img {
     font-size: 2rem;
   }
 
+
+
   /* About */
 
 
@@ -300,3 +325,5 @@ header img {
       border-top: 5px solid #0a5c8f;
       text-align: center;
     }
+
+    
