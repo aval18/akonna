@@ -153,15 +153,41 @@ header img {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   .menu {
     display: none;
   }
+  .logo {
+    padding-left: 1rem;
+  }
   .mobile {
-    display: flex;
+    display: inline-block;;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     justify-content: space-between;
+    position: relative;
+  }
+  .mobile:hover .dropdown {
+    display: block;
+  }
+  .mobile:active .dropdown {
+    display: block;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ececec;
+    min-width: 300px;
+    float: right;
+    right: 0;
+  }
+  .dropdown a {
+    display: block;
+    padding: 1rem;
+  }
+  .dropdown a:hover {
+    text-decoration: none;
   }
 }
 
@@ -185,32 +211,13 @@ header img {
   color: #c4d4e7;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   .banner {
-    line-height: 3rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 126px 1rem 1rem 1rem;
   }
 }
-
-/* Stip */
-
-.strip {
-  background-color: #c4d4e7;
-  height: 7rem;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 3rem;
-  letter-spacing: 0.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.strip .text-content {
-  margin: 2rem;
-}
-
-
 
 /* Jumbotron */
 
@@ -218,6 +225,7 @@ header img {
   background-image: url();
   margin: 0;
   font-family: "Kollektif";
+  background-size: cover;
 }
 
 .jumbotron p {
@@ -257,7 +265,32 @@ header img {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  #home .inside {
+    margin-bottom: 0;
+    margin-top: 25rem;
+    height: 20rem;
+    width: 100%;
+  }
+  .inside {
+    padding: 3rem;
+  }
+  #home .text-content {
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  #home .text-content .title {
+    font-size: 3rem;
+  }
+  #home {
+    padding: 0;
+  }
+  .jumbotron p {
+    margin-bottom: 0.5rem;
+  }
 
+
+}
 
 /* Gallery */
 
@@ -271,6 +304,46 @@ header img {
 
   .gallery span {
     padding: 2rem;
+  }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .gallery span {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .gallery {
+    margin: 0;
+    margin-top: 3rem;
+  }
+}
+
+  /* Stip */
+
+  .strip {
+    background-color: #c4d4e7;
+    height: 7rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .strip .text-content {
+    margin: 2rem;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .strip {
+      letter-spacing: 0.1rem;
+      line-height: 2rem;
+    }
+    .strip .text-content {
+      padding: 0;
+    }
   }
 
 
@@ -299,6 +372,7 @@ header img {
     padding: 2rem;
     background-color: #0a5c8f;
     color: white;
+    text-align: center;
   }
 
   .product .text-content span {
@@ -331,11 +405,11 @@ header img {
 
   .name {
     font-size: 2rem;
+    text-align: center;
   }
 
   .hat {
-    height: 313.83px;
-    width: 313.83px;
+    height: 60.36%;
     background-image: url("../images/hat white square.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -346,6 +420,38 @@ header img {
     background-image: url("../images/hat black square.jpg");
     background-repeat: no-repeat;
     transition: 0.1s ease-in-out 0.1s;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .product-page .jumbotron {
+      background-size: cover;
+    }
+    .product-page .inside {
+      height: 10rem;
+      width: 50%;
+      padding: 1rem;
+      margin: auto;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    .product-page .text-content {
+      padding: 2rem;
+    }
+    .all-products {
+      margin: 1rem;
+    }
+    .product {
+      width: 33%;
+    }
+    .name {
+      font-size: 1.7rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
+    .hat {
+      height: 36.655%;
+    }
   }
 
   /* About */
