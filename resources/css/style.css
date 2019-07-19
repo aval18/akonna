@@ -398,16 +398,20 @@ header img {
     justify-content: space-around;
   }
 
+  .row-1 .product {
+    margin-top: 3rem;
+  }
+
   .name {
     font-size: 2rem;
     text-align: center;
   }
 
   .hover {
-    height: 60.36%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    height: 313.83px;
   }
 
   .hover:hover {
@@ -424,8 +428,7 @@ header img {
   }
 
   #beeshirt .hover {
-    background-image: url("../images/bee shirts.jpg");
-    height: 152.35%;
+    background-image: url("../images/bee shirts square.jpg");
   }
 
   #beeshirt .hover:hover {
@@ -434,6 +437,9 @@ header img {
 
   .mult img {
     display: none;
+  }
+  .description {
+    display: block;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -457,17 +463,17 @@ header img {
     .product {
       width: 33%;
     }
-    .name {
-      font-size: 1.7rem;
-    }
-    .description {
-      font-size: 1rem;
-    }
     .hover {
-      background-image: none !important;
+      display: none;
     }
     .mult img {
       display: block;
+    }
+    .description {
+      display: none;
+    }
+    .name {
+      font-size: 1.3rem;
     }
   }
 
