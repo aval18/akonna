@@ -408,18 +408,32 @@ header img {
     text-align: center;
   }
 
-  .hat {
+  .hover {
     height: 60.36%;
-    background-image: url("../images/hat white square.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
   }
 
-  .hat:hover {
-    background-image: url("../images/hat black square.jpg");
+  .hover:hover {
     background-repeat: no-repeat;
     transition: 0.1s ease-in-out 0.1s;
+  }
+
+  #hat .hover {
+    background-image: url("../images/hat white square.jpg");
+  }
+
+  #hat .hover:hover {
+    background-image: url("../images/hat black square.jpg");
+  }
+
+  #beeshirt .hover {
+    background-image: url("../images/hat black square.jpg");
+  }
+
+  #beeshirt .hover:hover {
+    background-image: url("../images/bee shirts white.jpg");
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -449,7 +463,7 @@ header img {
     .description {
       font-size: 1rem;
     }
-    .hat {
+    .hover {
       height: 36.655%;
     }
   }
@@ -472,6 +486,16 @@ header img {
 
   .wide {
     background-color: #ececec;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .detail {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .wide .title {
+      font-size: 4rem;
+    }
   }
 
 
@@ -501,6 +525,12 @@ input[type=submit] {
   .container {
     padding: 3rem;
     width: 900px;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
   }
   /* Footer */
 
