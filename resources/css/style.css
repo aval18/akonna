@@ -393,12 +393,7 @@ header img {
     width: 100%;
   }
 
-  .row-1 {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .row-2 {
+  .row-1, .row-2,.row-3 {
     display: flex;
     justify-content: space-around;
   }
@@ -429,11 +424,16 @@ header img {
   }
 
   #beeshirt .hover {
-    background-image: url("../images/hat black square.jpg");
+    background-image: url("../images/bee shirts.jpg");
+    height: 152.35%;
   }
 
   #beeshirt .hover:hover {
     background-image: url("../images/bee shirts white.jpg");
+  }
+
+  .mult img {
+    display: none;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -464,7 +464,10 @@ header img {
       font-size: 1rem;
     }
     .hover {
-      height: 36.655%;
+      background-image: none !important;
+    }
+    .mult img {
+      display: block;
     }
   }
 
