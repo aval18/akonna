@@ -469,16 +469,21 @@ header img {
     .mult img {
       display: block;
     }
-    .description {
+    .product .text-content .description {
       display: none;
     }
     .name {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 
   /* About */
 
+  .page {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .info .subtitle {
     display: block;
@@ -489,12 +494,16 @@ header img {
   }
 
   .detail {
-    padding-right: 20rem;
-    padding-left: 20rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 
   .wide {
     background-color: #ececec;
+  }
+
+  .page video {
+    width: 30%;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
