@@ -490,29 +490,35 @@ header img {
   }
 
   .info .text-content {
-    padding: 3rem;
-  }
-
-  .detail {
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding: 2rem;
   }
 
   .wide {
     background-color: #ececec;
   }
 
+  .detail {
+    padding-right: 5rem;
+  }
   .page video {
-    width: 30%;
+    width: 25%;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
     .detail {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     .wide .title {
       font-size: 4rem;
+    }
+    .page {
+      padding: 0;
+      display: block;
+    }
+    .page video {
+      width: 50%;
+      margin: auto;
     }
   }
 
