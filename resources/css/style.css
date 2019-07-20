@@ -455,7 +455,7 @@ header img {
       margin-bottom: 5rem;
     }
     .product-page .text-content {
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
     .all-products {
       margin: 1rem;
@@ -500,8 +500,12 @@ header img {
   .detail {
     padding-right: 5rem;
   }
-  .page video {
-    width: 25%;
+  .vid {
+    width: 100%;
+    margin: auto;
+  }
+  .vid video {
+    width: 100%;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -516,9 +520,14 @@ header img {
       padding: 0;
       display: block;
     }
-    .page video {
-      width: 50%;
+    .vid video {
+      width: 100%
+    }
+    .vid {
+      display: flex;
+      width: 60%;
       margin: auto;
+      padding-bottom: 2rem;
     }
   }
 
