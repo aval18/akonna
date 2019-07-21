@@ -222,7 +222,8 @@ header img {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url();
+  background-image: url("../images/black bee.jpg");
+  background-position: center;
   margin: 0;
   font-family: "Kollektif";
   background-size: cover;
@@ -238,9 +239,9 @@ header img {
   width: 35rem;
   height: 27rem;
   margin: auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-right: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -442,7 +443,7 @@ header img {
     display: block;
   }
 
-  @media only screen and (min-width: 300px) and (max-width: 768px) {
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
     .product-page .jumbotron {
       background-size: cover;
     }
