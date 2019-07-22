@@ -234,6 +234,10 @@ header img {
   font-size: 1.3rem;
 }
 
+#home img {
+  display: none;
+}
+
 .inside {
   background-color: white;
   width: 35rem;
@@ -268,16 +272,13 @@ header img {
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   #home .inside {
-    margin-bottom: 0;
-    margin-top: 25rem;
+    margin: 0;
     height: 20rem;
     width: 100%;
   }
-  .inside {
-    padding: 3rem;
-  }
   #home .text-content {
-    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     line-height: 3rem;
   }
   #home .text-content .title {
@@ -289,7 +290,13 @@ header img {
   .jumbotron p {
     margin-bottom: 0.5rem;
   }
-
+  .jumbotron {
+    background-image: none;
+  }
+  #home img {
+    display: block;
+    width: 100%;
+  }
 
 }
 
@@ -314,7 +321,6 @@ header img {
   }
   .gallery {
     margin: 0;
-    margin-top: 3rem;
   }
 }
 
