@@ -182,7 +182,6 @@ header img {
   .mobile:hover .dropdown {
     display: block;
   }
-  
   .dropdown {
     display: none;
     position: absolute;
