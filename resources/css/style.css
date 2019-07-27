@@ -458,6 +458,14 @@ header img {
     background-image: url("../images/bee shirts white.jpg");
   }
 
+  #globeshirt .hover {
+    background-image: url("../images/globe shirt.jpg");
+  }
+
+  #globeshirt .hover:hover {
+    background-image: url("../images/globe shirt blue.jpg");
+  }
+
   .mult img {
     display: none;
   }
