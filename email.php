@@ -5,6 +5,7 @@ if($_POST["submit"]) {
     $subject="Form to email message";
     $name=$_POST["name"];
     $email=$_POST["email"];
+    $subject=$_POST["subject"];
     $message=$_POST["message"];
 
     $mailBody="Name: $name\nEmail: $email\n\n$message";

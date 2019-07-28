@@ -263,9 +263,10 @@
 
       <div class="container">
         <form action="email.php" method="post" enctype="text/plain" target="_blank">
-          <input type="text" id="name" name="name" placeholder="name">
-          <input type="text" id="email" name="email" placeholder="email">
-          <textarea id="message" name="message" placeholder="message" style="height:10rem"></textarea>
+          <input type="text" id="name" name="name" placeholder="name" required>
+          <input type="text" id="email" name="email" placeholder="email" required>
+          <input type="text" id="subject" name="subject" placeholder="subject" required>
+          <textarea id="message" name="message" placeholder="message" style="height:10rem" required></textarea>
           <input name ="submit" type="submit" value="Send">
         </form>
       </div>`
