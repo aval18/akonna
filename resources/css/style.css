@@ -190,7 +190,8 @@ header img {
     float: right;
     right: 0;
     opacity: 0.95;
-    min-width: 150px
+    min-width: 150px;
+    margin-top: 1rem;
   }
   .dropdown a {
     display: block;
@@ -566,6 +567,7 @@ header img {
       margin: auto;
       padding-bottom: 2rem;
     }
+
   }
 
 
