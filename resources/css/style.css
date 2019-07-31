@@ -181,31 +181,33 @@ header img {
     border-bottom: none;
   }
   #mobile {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     justify-content: space-between;
-    width: 0;
+    position: fixed;
+    overflow-x: hidden;
   }
   .overlay {
     height: 100%;
-    position: fixed;
+    width: 0;
     z-index: 4;
     top: 0;
     left: 0;
-    background-color:#ececec;
+    background-color: white;
     transition: 0.5s;
-    position: relative;
   }
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 5%;
     width: 100%;
     text-align: center;
     padding-top: 3rem;
+    overflow: hidden;
   }
   .overlay-content a {
     display: block;
     padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: black;
   }
   .overlay-content a:hover {
     text-decoration: none;
@@ -215,7 +217,7 @@ header img {
   }
   .overlay .closebtn {
     position: absolute;
-    padding-right: 1rem;
+    padding: 1rem;
   }
 }
 

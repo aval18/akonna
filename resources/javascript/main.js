@@ -1,5 +1,5 @@
 function openNav() {
-  document.getElementById("mobile").style.width = "100%";
+  document.getElementById("mobile").style.width = "80%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
