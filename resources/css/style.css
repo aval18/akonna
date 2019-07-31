@@ -205,11 +205,10 @@ header img {
   .overlay-content a {
     display: block;
     padding: 1rem;
-    width: 100%;
     font-size: 1.5rem;
     color: black;
   }
-  .overlay-content a:hover {
+  .overlay a:hover {
     text-decoration: none;
   }
   .text-content {
@@ -217,7 +216,7 @@ header img {
   }
   .overlay .closebtn {
     position: absolute;
-    padding: 1rem;
+    padding-left: 1rem;
   }
 }
 
