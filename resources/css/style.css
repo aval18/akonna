@@ -183,7 +183,7 @@ header img {
   #mobile {
     justify-content: space-between;
     position: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .overlay {
     height: 100%;
