@@ -190,9 +190,9 @@ header img {
     width: 0;
     z-index: 4;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: white;
-    transition: 0.5s;
+    transition: 0.7s;
   }
   .overlay-content {
     position: relative;
@@ -216,7 +216,8 @@ header img {
   }
   .overlay .closebtn {
     position: absolute;
-    padding-left: 1rem;
+    padding-right: 1rem;
+    right: 0;
   }
 }
 
