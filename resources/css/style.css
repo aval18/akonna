@@ -126,7 +126,7 @@ nav div {
 
 nav span {
   font-size: 3rem;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 nav li {
@@ -148,12 +148,12 @@ header img {
 .menu {
   padding-right: 15rem;
 }
-
-.mobile {
+.open {
   display: none;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
+
   nav, header {
     height: 5rem;
   }
@@ -172,36 +172,50 @@ header img {
   .logo span {
     font-size: 2rem;
   }
-  .mobile {
-    display: inline-block;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    justify-content: space-between;
-    position: relative;
-  }
-  .mobile:hover .dropdown {
-    display: block;
-  }
-  .dropdown {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #ececec;
-    float: right;
-    right: 0;
-    opacity: 0.95;
-    min-width: 150px;
-    margin-top: 1rem;
-  }
-  .dropdown a {
+  .open {
     display: block;
     padding: 1rem;
   }
-  .dropdown a:hover {
+  header a:hover {
+    text-decoration: none;
+    border-bottom: none;
+  }
+  #mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+    width: 0;
+  }
+  .overlay {
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color:#ececec;
+    transition: 0.5s;
+    position: relative;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .overlay-content a {
+    display: block;
+    padding: 1rem;
+  }
+  .overlay-content a:hover {
     text-decoration: none;
   }
   .text-content {
     padding: 2rem;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    padding-right: 1rem;
   }
 }
 
@@ -218,7 +232,7 @@ header img {
   text-transform: uppercase;
   line-height: 4.5rem;
   font-family: 'Montserrat';
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 
 .special {

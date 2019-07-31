@@ -1,8 +1,8 @@
-function myFunction() {
-  var x = document.getElementById("links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+function openNav() {
+  document.getElementById("mobile").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("mobile").style.width = "0%";
 }

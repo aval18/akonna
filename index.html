@@ -20,7 +20,6 @@
 <!-- Header -->
     <header>
       <nav>
-
         <div class="logo">
           <img src="resources/images/logo.png" alt="Logo">
           <span>akonna</span>
@@ -34,20 +33,20 @@
           </ul>
         </div>
 
-        <div class="mobile">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="border-bottom:none;">
-            <i class="fas fa-bars fa-2x"></i>
-          </a>
-          <div class="dropdown" id="links">
-              <a href="#home">home</a>
-              <a href="#shop">shop</a>
-              <a href="#about">about</a>
-              <a href="#contact">contact</a>
-          </div>
-        </div>
+        <a href="javascript:void(0)" class="open" style="font-size: 2rem"onclick="openNav()">&#9776;</a>
 
       </nav>
     </header>
+
+    <div id="mobile" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" style="border-bottom:none;font-size:3rem;" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="#home">home</a>
+          <a href="#shop">shop</a>
+          <a href="#about">about</a>
+          <a href="#contact">contact</a>
+      </div>
+    </div>
 
 <!-- Banner -->
 
