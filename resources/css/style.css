@@ -101,7 +101,7 @@ header {
   background-color: white;
   width: 100%;
   top: 0;
-  border-bottom: 10px #0a5c8f solid;
+  border-bottom: 5px #0a5c8f solid;
 }
 
 a {
@@ -205,8 +205,9 @@ header img {
   .overlay-content a {
     display: block;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
+    letter-spacing: 0.3rem;
   }
   .overlay a:hover {
     text-decoration: none;
@@ -399,8 +400,8 @@ header img {
     background-position: center;
   }
 
-  .product-page a {
-    color: white;
+  .all-products a {
+    color: black;
   }
 
   .product-page a:hover {
@@ -410,8 +411,8 @@ header img {
 
   .product .text-content {
     padding: 2rem;
-    background-color: #0a5c8f;
-    color: white;
+    background-color: #ececec;
+    color: black;
     text-align: center;
   }
 
@@ -420,7 +421,7 @@ header img {
   }
 
   .all-products {
-      margin: 3rem 6rem;
+    margin: 3rem 6rem;
   }
 
   .product {
@@ -489,6 +490,9 @@ header img {
   .description {
     display: block;
   }
+  .heading{
+    font-size: 1.5rem;
+  }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .product-page .jumbotron {
@@ -523,8 +527,11 @@ header img {
     .name {
       font-size: 1.2rem;
     }
-    .price {
+    .price, .btn a {
       font-size: 0.8rem;
+    }
+    .heading {
+      font-size: 0.9rem;
     }
   }
 
