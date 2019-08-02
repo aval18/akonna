@@ -83,11 +83,6 @@ ol, ul {
   src: ('../../../../../downloads/fonts/Kollektif-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
-}@font-face {
-  font-family: 'Kollektif';
-  src: ('../../../../../downloads/fonts/Kollektif-Italic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 400;
 }
 
 
@@ -256,7 +251,6 @@ header img {
   background-image: url("../images/black bee wide.jpg");
   background-position: center;
   margin: 0;
-  font-family: "Kollektif";
   background-size: cover;
 }
 
@@ -404,7 +398,7 @@ header img {
     color: black;
   }
 
-  .product-page a:hover {
+  #shop a:hover {
     text-decoration: none;
     font-weight: bold;
   }
@@ -495,10 +489,10 @@ header img {
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
-    .product-page .jumbotron {
+    #shop .jumbotron {
       background-size: cover;
     }
-    .product-page .inside {
+    #shop .inside {
       height: 10rem;
       width: 50%;
       padding: 1rem;
@@ -506,7 +500,7 @@ header img {
       margin-top: 5rem;
       margin-bottom: 5rem;
     }
-    .product-page .text-content {
+    #shop .text-content {
       padding: 1rem;
     }
     .all-products {
@@ -537,13 +531,13 @@ header img {
 
   /* About */
 
-  .page {
+  .section {
     display: flex;
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  .info .subtitle {
+  .subtitle {
     display: block;
   }
 
@@ -562,7 +556,7 @@ header img {
     width: 100%;
   }
 
-  .page .text-content {
+  .section .text-content {
     padding: 3rem;
   }
 
@@ -574,10 +568,10 @@ header img {
     .subtitle{
       font-size: 2.5rem;
     }
-    .info .text-content {
+    #about .text-content {
       padding: 1rem;
     }
-    .page {
+    .section {
       padding: 0;
       display: block;
     }
