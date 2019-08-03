@@ -2,10 +2,12 @@
 
 html {
   font-size: 14px;
+  height: 100%;
 }
 
 body {
   font-family: 'Karla';
+  height: 100%;
 }
 
 ol, ul {
@@ -26,6 +28,10 @@ ol, ul {
   font-size: 3rem;
 }
 
+.page {
+  height: 100%;
+  display: none;
+}
 
 /* Font Face */
 @font-face {
@@ -147,6 +153,10 @@ header img {
   display: none;
 }
 
+.overlay ul {
+  padding: 0;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
 
   nav, header {
@@ -230,7 +240,6 @@ header img {
   text-transform: uppercase;
   line-height: 4.5rem;
   font-family: 'Montserrat';
-  padding-top: 2rem;
 }
 
 .special {
@@ -246,6 +255,10 @@ header img {
 }
 
 /* Jumbotron */
+
+#home {
+  display: block;
+}
 
 .jumbotron {
   background-image: url("../images/black bee wide.jpg");
@@ -316,6 +329,9 @@ header img {
   }
   .jumbotron {
     background-image: none;
+  }
+  #home .jumbotron {
+    padding-top: 0;
   }
   #home img {
     display: block;
@@ -529,6 +545,17 @@ header img {
     }
   }
 
+  /* Custom */
+
+  #custom span {
+    display: block;
+  }
+
+  strong {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
   /* About */
 
   .section {
@@ -545,9 +572,6 @@ header img {
     background-color: #ececec;
   }
 
-  .detail {
-    padding-right: 5rem;
-  }
   .vid {
     width: 100%;
     margin: auto;
@@ -563,7 +587,6 @@ header img {
   @media only screen and (min-width: 300px) and (max-width: 768px) {
     .detail {
       width: 100%;
-      padding: 0;
     }
     .subtitle{
       font-size: 2.5rem;
@@ -624,6 +647,7 @@ input[type=submit] {
   /* Footer */
 
     footer {
-      border-top: 5px solid #0a5c8f;
+      background-color: #ececec;
+      padding: 2rem;
       text-align: center;
     }

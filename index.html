@@ -26,11 +26,11 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#shop">shop</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#custom">custom</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li onclick="openPage('home')" class="tab"><a href="#home" id="defaultOpen">home</a></li>
+            <li onclick="openPage('shop')" class="tab"><a href="#shop">shop</a></li>
+            <li onclick="openPage('custom')"class="tab"><a href="#custom">custom</a></li>
+            <li onclick="openPage('about')"class="tab"><a href="#about">about</a></li>
+            <li onclick="openPage('contact')"class="tab"><a href="#contact">contact</a></li>
           </ul>
         </div>
 
@@ -42,11 +42,13 @@
     <div class="overlay" id="mobile">
       <a href="javascript:void(0)" class="closebtn" style="border-bottom:none;font-size:3rem;color:black" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-          <a href="#home"onclick="closeNav()">HOME</a>
-          <a href="#shop"onclick="closeNav()">SHOP</a>
-          <a href="#about"onclick="closeNav()">ABOUT</a>
-          <a href="#about"onclick="closeNav()">CUSTOM</a>
-          <a href="#contact"onclick="closeNav()">CONTACT</a>
+        <ul>
+          <li onclick="openPage('home')" class="tab"><a href="#home"onclick="closeNav()" id="defaultOpen">HOME</a></li>
+          <li onclick="openPage('shop')" class="tab"><a href="#shop"onclick="closeNav()">SHOP</a></li>
+          <li onclick="openPage('custom')" class="tab"><a href="#about"onclick="closeNav()">CUSTOM</a></li>
+          <li onclick="openPage('about')" class="tab"><a href="#about"onclick="closeNav()">ABOUT</a></li>
+          <li onclick="openPage('contact')"class="tab"><a href="#contact"onclick="closeNav()">CONTACT</a></li>
+        </ul>
       </div>
     </div>
 
@@ -59,35 +61,37 @@
 
 
     <!-- Jumbotron -->
-
-      <div class="jumbotron" id="home">
-        <img src="./resources/images/black bee wide.jpg" alt="Bee Shirt">
-        <div class="inside">
-          <div class="text-content">
-            <span class="title">AKONNA</span>
-            <p>Akonna offers a collection of trendy and affordable clothing/accessories of high quality - Canada based. 10% of all profits are donated to charity. Shop now on our Etsy site!</p>
-            <div class="btn"><a href="https://www.etsy.com/ca/shop/AkonnaByAva">Shop the Collection</a></div>
+      <div class="page" id="home">
+        <div class="jumbotron">
+          <img src="./resources/images/black bee wide.jpg" alt="Bee Shirt">
+          <div class="inside">
+            <div class="text-content">
+              <span class="title">AKONNA</span>
+              <p>Akonna offers a collection of trendy and affordable clothing/accessories of high quality - Canada based. 10% of all profits are donated to charity. Shop now on our Etsy site!</p>
+              <div class="btn"><a href="https://www.etsy.com/ca/shop/AkonnaByAva">Shop the Collection</a></div>
+            </div>
           </div>
         </div>
+
+        <!-- Gallery -->
+
+      <div class="gallery">
+        <i class="fab fa-instagram fa-3x"></i>
+        <span class="subtitle">@shopakonna</span>
+        <div class="elfsight-app-d3c190db-2d2c-4026-acc6-b8071eca9345"></div>
       </div>
 
-<!-- Gallery -->
+      <!-- Strip -->
 
-    <div class="gallery">
-      <i class="fab fa-instagram fa-3x"></i>
-      <span class="subtitle">@shopakonna</span>
-      <div class="elfsight-app-d3c190db-2d2c-4026-acc6-b8071eca9345"></div>
-    </div>
-
-<!-- Strip -->
-
-    <div class="strip">
-      <i class="fas fa-dolly-flatbed fa-2x"></i>
-      <div class="text-content">
-        <span>free shipping for patches<br>and shirts in canada</span>
+      <div class="strip">
+        <i class="fas fa-dolly-flatbed fa-2x"></i>
+        <div class="text-content">
+          <span>free shipping for patches<br>and shirts in canada</span>
+        </div>
+          <i class="fas fa-shipping-fast fa-2x"></i>
       </div>
-        <i class="fas fa-shipping-fast fa-2x"></i>
     </div>
+
 
 <!-- Page Shop -->
 
@@ -227,9 +231,33 @@
         <div class="detail">
           <div class="text-content">
             <span class="subtitle">Embroidery</span>
-            <span>I offer custom embroidery for any type of design, including logos and graphic designs. The size is limited to 4 x4 inches, but it typically the perfect size for an embroidered design. Pricing varies on the design and colours, with black and white being the default for not extra cost. The maximum is 30 units, but please contact me for additional information regarding the amount of units.</span>
-            <strong>Pricing</strong>
-            <span></span>
+            <span>I offer custom embroidery for any type of design, including logos and graphic designs. The size is limited to 4 x4 inches, but it typically the perfect size for an embroidered design. Pricing varies on the design and colours, with black and white being the default for not extra cost. The maximum is 25 units, but please contact me for additional information regarding the amount of units. I can either source the item you would like for embroidery for an additional cost, or you can send the items that need to be embroidered.</span>
+          </div>
+          <div class="text-content">
+            <strong>Pricing (Up to 8000 stitches)</strong>
+            <span>1-5 units: $6 each</span>
+            <span>6-15: $5 each</span>
+            <span>16-25: $4 each</span>
+          </div>
+          <div class="container">
+            <form action="email.php" method="post" enctype="text/plain" target="_blank">
+              <span>Name</span>
+              <input type="text" id="name" name="name" required>
+              <span>Email</span>
+              <input type="text" id="email" name="email" required>
+              <span>What will the embroidered design go on and how many units do you need? (Example: 20 hats, 5 aprons, etc.)</span>
+              <input type="text" id="amount" name="amount" required>
+              <span>How complex is your design? (Amount of colours, intricate design, etc.)</span>
+              <input type="text" id="design" name="design" required>
+              <span>Do you have a timeline or budget? If so, please describe.</span>
+              <input type="text" id="timeline" name="timeline" required>
+              <span>Please choose which option applies to you:</span>
+              <span>I would like you to source my items. (Sourcing will cost an additional $10 for finding your desired item, and you will have to pay the wholesale price for each item.)</span>
+              <span>I have my own items.</span>
+              <span>Please check yes if you agree to a 50% deposit after confirmation, and 100% after the first product is finished with approval.</span>
+
+              <input name ="submit" type="submit" value="Send">
+            </form>
           </div>
         </div>
       </div>
@@ -274,26 +302,27 @@
       </div>
     </div>
 
-<!-- Contact -->
-    <div id="contact">
+    <!-- Contact -->
+        <div class="page "id="contact">
 
-      <div class="wide">
-        <div class="text-content">
-          <span class="title">Get in Touch</span>
+          <div class="wide">
+            <div class="text-content">
+              <span class="title">Get in Touch</span>
+            </div>
+          </div>
+
+          <div class="container">
+            <form action="email.php" method="post" enctype="text/plain" target="_blank">
+              <input type="text" id="name" name="name" placeholder="name" required>
+              <input type="text" id="email" name="email" placeholder="email" required>
+              <input type="text" id="subject" name="subject" placeholder="subject" required>
+              <textarea id="message" name="message" placeholder="message" style="height:10rem" required></textarea>
+              <input name ="submit" type="submit" value="Send">
+            </form>
+          </div>`
+
         </div>
-      </div>
 
-      <div class="container">
-        <form action="email.php" method="post" enctype="text/plain" target="_blank">
-          <input type="text" id="name" name="name" placeholder="name" required>
-          <input type="text" id="email" name="email" placeholder="email" required>
-          <input type="text" id="subject" name="subject" placeholder="subject" required>
-          <textarea id="message" name="message" placeholder="message" style="height:10rem" required></textarea>
-          <input name ="submit" type="submit" value="Send">
-        </form>
-      </div>`
-
-    </div>
 
 <!-- Footer -->
 
