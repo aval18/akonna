@@ -11,8 +11,8 @@
     <script type="text/javascript" src="resources/javascript/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
     <title>akonna</title>
   </head>
   <body>
@@ -240,7 +240,7 @@
             <span>16-25: $4 each</span>
           </div>
           <div class="container">
-            <form action="email.php" method="post" enctype="text/plain" target="_blank">
+            <form action="./resources/php/custom.php" method="post" enctype="text/plain" target="_blank">
               <span>Name</span>
               <input type="text" id="name" name="name" required>
               <span>Email</span>
@@ -251,11 +251,27 @@
               <input type="text" id="design" name="design" required>
               <span>Do you have a timeline or budget? If so, please describe.</span>
               <input type="text" id="timeline" name="timeline" required>
-              <span>Please choose which option applies to you:</span>
-              <span>I would like you to source my items. (Sourcing will cost an additional $10 for finding your desired item, and you will have to pay the wholesale price for each item.)</span>
-              <span>I have my own items.</span>
-              <span>Please check yes if you agree to a 50% deposit after confirmation, and 100% after the first product is finished with approval.</span>
-
+              <span>How did you hear about Akonna?</span>
+              <input type="text" id="hear" name="hear" required>
+              <strong>Please choose which option applies to you:</strong>
+              <label class="option">
+                <span>I would like you to source my items. (Sourcing will cost an additional $10 for finding your desired item, and you will have to pay the wholesale price for each item.)</span>
+                <input type="radio" name="source">
+                <span class="checkmark"></span>
+              </label>
+              <label class="option">
+                <span>I have my own items.</span>
+                <input type="radio" name="source">
+                <span class="checkmark"></span>
+              </label>
+              <strong>Please submit your embroidery design.</strong>
+              <input type="file" name="myFile">
+              <span>Please check yes if you agree to a 50% deposit after confirmation that will be deducted from the final cost.</span>
+              <label class="option">
+                <span>I agree.</span>
+                <input type="radio" name="agree" required>
+                <span class="checkmark"></span>
+              </label>
               <input name ="submit" type="submit" value="Send">
             </form>
           </div>
@@ -312,7 +328,7 @@
           </div>
 
           <div class="container">
-            <form action="email.php" method="post" enctype="text/plain" target="_blank">
+            <form action="./resources/php/email.php" method="post" enctype="text/plain" target="_blank">
               <input type="text" id="name" name="name" placeholder="name" required>
               <input type="text" id="email" name="email" placeholder="email" required>
               <input type="text" id="subject" name="subject" placeholder="subject" required>

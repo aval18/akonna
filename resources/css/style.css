@@ -561,6 +561,47 @@ header img {
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+  /* Customize the label (the container) */
+.option {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: normal;
+}
+
+/* Hide the browser's default radio button */
+.option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.option input:checked ~ .checkmark {
+  background-color: #0a5c8f;
+}
+
+form span {
+  padding: 1rem 0;
+}
+
 
   /* About */
 
@@ -656,4 +697,6 @@ input[type=submit] {
       background-color: #ececec;
       padding: 2rem;
       text-align: center;
+      bottom: 0;
+      width: 100%;
     }
