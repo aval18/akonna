@@ -22,3 +22,11 @@ function openPage(pageName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+
+
+// Header and footer
+
+function load() {
+  footer.load("../../index.html");
+}

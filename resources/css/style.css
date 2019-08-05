@@ -46,14 +46,19 @@
 }
 @font-face {
   font-family: 'Kollektif';
-  src: ('../../../../../downloads/fonts/Kollektif.ttf') format('truetype');
+  src: url('../../../../../downloads/fonts/Kollektif/Kollektif.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
 }@font-face {
   font-family: 'Kollektif';
-  src: ('../../../../../downloads/fonts/Kollektif-Bold.ttf') format('truetype');
+  src: url('../../../../../downloads/fonts/Kollektif/Kollektif-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
+}@font-face {
+  font-family: 'Friday';
+  src: url('../../../../../downloads/fonts/The-Friday-Stroke.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Universal */
@@ -278,7 +283,7 @@ header img {
   font-size: 1.3rem;
 }
 
-#home img {
+#home .jumbotron img {
   display: none;
 }
 
@@ -403,6 +408,29 @@ header img {
     }
   }
 
+/* info */
+
+  .info {
+    display: flex;
+    margin: 7rem;
+  }
+
+  .info h1 {
+    font-family: 'Friday';
+    letter-spacing: 0.8rem;
+    font-size: 4rem;
+  }
+
+  .info img {
+    height: 40rem;
+  }
+
+  .info .vector {
+    height: 20rem;
+    transform: rotate(330deg);
+    position: absolute;
+    left: 3%;
+  }
 
 
 /* Page shop */
@@ -607,8 +635,8 @@ form span {
 
   .section {
     display: flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 2rem 5rem;
+    justify-content: center;
   }
 
   .subtitle {
@@ -630,6 +658,7 @@ form span {
   .section .text-content {
     padding: 3rem;
   }
+
 
   @media only screen and (min-width: 300px) and (max-width: 768px) {
     .detail {
@@ -679,18 +708,20 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  border: 3px solid white;
 }
 
-  .container {
-    padding: 3rem;
-    width: 900px;
+input[type=submit]:hover {
+  background-color: white;
+  color: #0a5c8f;
+  border: 3px solid #0a5c8f;
+  transition: 0.3s;
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  #contact .section {
+    padding: 1rem;
   }
-
-  @media only screen and (min-width: 300px) and (max-width: 768px) {
-    .container {
-      width: 90%;
-    }
-  }
+}
   /* Footer */
 
     footer {
@@ -699,4 +730,5 @@ input[type=submit] {
       text-align: center;
       bottom: 0;
       width: 100%;
+      position: relative;
     }
