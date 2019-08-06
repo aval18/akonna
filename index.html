@@ -25,7 +25,7 @@
           <span>akonna</span>
         </div>
         <div class="menu">
-          <ul>
+          <ul class="lato">
             <li onclick="openPage('home')" class="tab"><a href="#home" id="defaultOpen">home</a></li>
             <li onclick="openPage('shop')" class="tab"><a href="#shop">shop</a></li>
             <li onclick="openPage('custom')"class="tab"><a href="#custom">custom</a></li>
@@ -42,7 +42,7 @@
     <div class="overlay" id="mobile">
       <a href="javascript:void(0)" class="closebtn" style="border-bottom:none;font-size:3rem;color:black" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-        <ul>
+        <ul class="lato">
           <li onclick="openPage('home')" class="tab"><a href="#home"onclick="closeNav()" id="defaultOpen">HOME</a></li>
           <li onclick="openPage('shop')" class="tab"><a href="#shop"onclick="closeNav()">SHOP</a></li>
           <li onclick="openPage('custom')" class="tab"><a href="#about"onclick="closeNav()">CUSTOM</a></li>
@@ -55,8 +55,8 @@
 <!-- Banner -->
 
     <div class="banner">
-      <span>Buy 2 items and receive 15% off - Use the code</span>
-      <span class="special">COMBO15</span>
+      <span class="lato">Buy 2 items and receive 15% off - Use the code</span>
+      <span class="lato special">COMBO15</span>
     </div>
 
 
@@ -66,8 +66,8 @@
           <img src="./resources/images/black bee wide.jpg" alt="Bee Shirt">
           <div class="inside">
             <div class="text-content">
-              <span class="title">AKONNA</span>
-              <p>Akonna offers a unique collection of clothing/accessories - Canada based. 10% of all profits are donated for cancer research. Shop now on our Etsy site!</p>
+              <span class="title">apparel and accessories for all</span>
+              <p class="lato">Akonna offers a unique collection of clothing/accessories - Canada based. 10% of all profits are donated for cancer research. Shop now on our Etsy site!</p>
               <div class="btn" onclick="openPage('shop')" class="tab"><a href="#shop">Shop the Collection</a></div>
             </div>
           </div>
@@ -84,10 +84,13 @@
 <!-- Code -->
 
       <div class="info code">
+        <span class="mobile title">This website is coded by me!</span>
         <img src="./resources/images/tropical-leaf.png" alt="Leaf vector" class="vector">
-        <img src="./resources/images/code.jpg" alt="code" class="subject">
-        <span class="title">This website is 100% coded by me!</span>
-        <p>In the summer of 2018, I had a burst of interest to learn how to code. My brother was a coder, and I was very eager to start to learn how to make websites! I took a 10-week intensive at Codecademy, and that's how my coding journey started! A bit less than a year after taking the intensive, I started to code this website and released it on August 8! I now exclusively sell on Etsy!</p>
+        <div class="subject">
+          <img src="./resources/images/code.jpg" alt="code">
+          <span class="desktop title">This website is 100% coded by me!</span>
+          <p>In the summer of 2018, I had a burst of interest to learn how to code. My brother was a coder, and I was very eager to start to learn how to make websites! I took a 10-week intensive at Codecademy, and that's how my coding journey started! A bit less than a year after taking the intensive, I started to code this website and released it on August 8! I now exclusively sell on Etsy!</p>
+        </div>
       </div>
 
 <!-- Advantages -->
@@ -110,7 +113,7 @@
           <div class="advantage-content">
             <div class="text-content">
               <span>CUSTOMER CARE</span>
-              <p>We want to make sure your time with Akonna is well spent. If you have any questions or concerns, please send an email our way through the contact section in the navigation <br>^^</p>
+              <p>We want to make sure your time with Akonna is well spent. If you have any questions or concerns, please send an email our way through the contact section in the navigation ^^</p>
             </div>
           </div>
         </div>
@@ -138,8 +141,8 @@
       <div class="jumbotron">
         <div class="inside">
           <div class="text-content">
-            <span class="heading">Shop our products on Etsy <3</span>
-            <div class="btn"><a href="https://www.etsy.com/ca/shop/AkonnaByAva">Shop on Etsy</a></div>
+            <div class="btn"><a href="https://www.etsy.com/ca/shop/AkonnaByAva">purchase on etsy</a></div>
+            <p>As of August 2019, Akonna exclusively sells on Etsy. Click the text above to shop there!</p>
           </div>
         </div>
       </div>
@@ -264,13 +267,12 @@
 
 <!-- Custom -->
     <div class="page" id="custom">
-      <div class="wide">
-        <div class="text-content">
-          <span class="title">Custom Orders</span>
-        </div>
+      <div class="info">
+        <span class="title">Custom Orders</span>
+        <img class="subject "src="" alt="">
       </div>
       <div class="section">
-        <div class="detail">
+        <div class="detail container">
           <div class="text-content">
             <span class="subtitle">Embroidery</span>
             <span>I offer custom embroidery for any type of design, including logos and graphic designs. The size is limited to 4 x4 inches, but it typically the perfect size for an embroidered design. Pricing varies on the design and colours, with black and white being the default for not extra cost. The maximum is 25 units, but please contact me for additional information regarding the amount of units. I can either source the item you would like for embroidery for an additional cost, or you can send the items that need to be embroidered.</span>
@@ -327,10 +329,9 @@
 <!-- About -->
 
     <div class="page" id="about">
-      <div class="wide">
-        <div class="text-content">
-          <span class="title">About Akonna</span>
-        </div>
+      <div class="info">
+        <span class="title">About Akonna</span>
+        <img class="subject "src="" alt="">
       </div>
 
       <div class="section">
@@ -369,10 +370,9 @@
     <!-- Contact -->
         <div class="page "id="contact">
 
-          <div class="wide">
-            <div class="text-content">
-              <span class="title">Get in Touch</span>
-            </div>
+          <div class="info">
+            <span class="title">Get in Touch</span>
+            <img class="subject "src="" alt="">
           </div>
 
           <div class="section">
