@@ -342,14 +342,11 @@ header img {
     background-image: none;
   }
   #home .jumbotron {
-    padding-top: 0;
+    padding: 0;
   }
-  #home img {
+  #home .jumbotron img {
     display: block;
     width: 100%;
-  }
-  #home .title {
-    color: #0a5c8f;
   }
 
 }
@@ -361,7 +358,7 @@ header img {
     justify-content: center;
     margin: 3rem;
     align-items: center;
-    background-color: #ececec;
+    height: 30rem;
   }
 
   .gallery span {
@@ -375,8 +372,131 @@ header img {
   }
   .gallery {
     margin: 0;
+    height: 12rem;
+    background-color: #ececec
+  }
+  .gallery i {
+    font-size: 2rem;
   }
 }
+
+/* info/code */
+
+  .info {
+    display: flex;
+    margin: 7rem;
+    margin-top: 0;
+  }
+
+  .info .title {
+    font-family: 'Friday';
+    letter-spacing: 0.8rem;
+    position: absolute;
+    padding: 1.5rem;
+    color: white;
+  }
+
+  .info img {
+    height: 30rem;
+    margin-top: 3rem;
+  }
+
+  .info .vector {
+    height: 15rem;
+    transform: rotate(330deg);
+    position: absolute;
+    left: 2%;
+  }
+
+  .code .title {
+    background-color: #c4d4e7;
+    right: 10%;
+  }
+  .code p {
+    margin-top: 12rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .code .title {
+    background-color: #c4d4e7;
+    right: 5%;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
+    .info {
+      margin: 2rem;
+      display: block;
+    }
+    .info .title {
+      font-size: 2rem;
+      letter-spacing: normal;
+      padding: 1rem;
+      position: relative;
+    }
+    .info img {
+      height: 15rem;
+    }
+    .info .subject {
+      width: 100%;
+      margin: auto;
+    }
+    .info .vector {
+      display: none;
+    }
+    .info p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.7rem;
+      margin: 1rem;
+      text-align: center;
+    }
+    .code .title {
+      right: -8%;
+    }
+  }
+
+
+/* Advantages */
+
+  .advantage .title {
+    background-color: #e1afb4;
+    left: 10%;
+  }
+
+  .advantage-content {
+    width: 33%;
+  }
+  .advantage-box {
+    display: flex;
+    margin-top: 7rem;
+    border: 3px solid #e1afb4;
+  }
+  .advantage-content span {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .advantage-content p {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
+    .advantage-box {
+      display: block;
+    }
+    .advantage-content {
+      width: 100%;
+    }
+    .advantage .title {
+      left: -5%;
+    }
+    .advantage-content p {
+      font-size: 1rem;
+    }
+    .advantage-content .text-content {
+      padding: 1rem;
+    }
+  }
 
   /* Stip */
 
@@ -407,31 +527,6 @@ header img {
       padding: 0;
     }
   }
-
-/* info */
-
-  .info {
-    display: flex;
-    margin: 7rem;
-  }
-
-  .info h1 {
-    font-family: 'Friday';
-    letter-spacing: 0.8rem;
-    font-size: 4rem;
-  }
-
-  .info img {
-    height: 40rem;
-  }
-
-  .info .vector {
-    height: 20rem;
-    transform: rotate(330deg);
-    position: absolute;
-    left: 3%;
-  }
-
 
 /* Page shop */
 
