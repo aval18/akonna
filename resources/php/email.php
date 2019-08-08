@@ -31,21 +31,25 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-if($_POST["submit"]) {
-
     $name=$_POST["name"];
     $email=$_POST["email"];
     $subject=$_POST["subject"];
     $message=$_POST["message"];
 
+    $email_from = "pinkberryloverz@gmail.com";
     $email_subject = "New contact format submission";
-    $email_body = "Here is the message:\n $message".
+    $email_body = "Name: $name.\n".
+                  "Message: $message \n".;
 
     $to = "aval8876@gmail.com";
 
-    mail($to,$email_subject,$email_body);
+    $headers = "From: $email_from \r\n";
+
+    $headers = "Reply-To: $email \r\n";
+
+    mail($to,$email_subject,$email_body,$headers);
+
+    header("Location: ../../index.html")
 
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
 ?>
