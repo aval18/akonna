@@ -1,4 +1,5 @@
 <?php
+Allow: GET, POST, HEAD;
 function IsInjected($str) {
     $injections = array('(\n+)',
            '(\r+)',

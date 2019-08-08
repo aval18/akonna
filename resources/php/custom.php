@@ -30,15 +30,15 @@ Allow: GET, POST, HEAD;
  */
  $website = "www.aval18.github.io/#custom.com";
 
- $name = $_REQUEST["name"];
- $email=$_REQUEST["email"];
- $amount=$_REQUEST["amount"];
- $design=$_REQUEST["design"];
- $timeline=$_REQUEST["timeline"];
- $hear=$_REQUEST["hear"];
- $source=$_REQUEST["source"];
- $myFile=$_REQUEST["myFile"];
- $agree=$_REQUEST["agree"];
+ $name = $_POST["name"];
+ $email=$_POST["email"];
+ $amount=$_POST["amount"];
+ $design=$_POST["design"];
+ $timeline=$_POST["timeline"];
+ $hear=$_POST["hear"];
+ $source=$_POST["source"];
+ $myFile=$_POST["myFile"];
+ $agree=$_POST["agree"];
  $msg =
  "Name: " . $name . "\r\n" .
  "Email: " . $email . "\r\n" .
