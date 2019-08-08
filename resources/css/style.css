@@ -144,7 +144,7 @@ header img {
 
 .logo {
   padding-left: 15rem;
-  font-family: 'Kollektif','Quicksand';
+  font-family: 'Kollektif','Lato';
 }
 
 .menu {
@@ -281,7 +281,7 @@ header img {
 }
 
 .jumbotron .title {
-  font-family: 'Kollektif', 'Quicksand';
+  font-family: 'Kollektif', 'Lato';
   font-size: 3rem;
 }
 #home .jumbotron .text-content {
