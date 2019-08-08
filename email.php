@@ -1,5 +1,4 @@
 <?php
-Allow: GET, POST, HEAD;
 function IsInjected($str) {
     $injections = array('(\n+)',
            '(\r+)',
@@ -49,7 +48,7 @@ if(IsInjected($visitor_email))
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("Location: ../../index.html")
+    header("Location: index.html")
 
 
 ?>
