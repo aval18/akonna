@@ -391,7 +391,7 @@ header img {
   }
   .subject {
     padding: 2rem;
-    border: 3px solid;
+    border: 3px solid #ececec;
   }
   .info img {
     height: 40rem;
@@ -442,11 +442,19 @@ header img {
   }
   .code .title {
     right: 5%;
+    margin-top: 3rem;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .info {
       margin: 2rem;
+      display: block;
+    }
+    .info img {
+      height: 20rem;
+      object-fit: cover;
+    }
+    .info span {
       display: block;
     }
     #home .info {
@@ -458,8 +466,10 @@ header img {
       letter-spacing: 0.6rem;
       padding: 1rem;
       position: relative;
+      width: 100%;
+      margin: auto;
     }
-    .info img {
+    #home .info img {
       height: 15rem;
       margin: 0;
     }
@@ -467,6 +477,7 @@ header img {
       width: 100%;
       margin: auto;
       display: block;
+      padding: 1rem;
     }
     .info .vector {
       display: none;
@@ -479,12 +490,8 @@ header img {
       text-align: center;
     }
     .code .title {
-      right: -5%;
       padding: 0.5rem;
-    }
-    .code .subject {
-      padding: 1rem;
-      margin-top: -3rem;
+      right: 0;
     }
   }
 
@@ -524,9 +531,6 @@ header img {
     .advantage-content {
       width: 100%;
     }
-    .advantage .title {
-      left: -5%;
-    }
     .advantage-content p {
       font-size: 1rem;
     }
@@ -535,6 +539,9 @@ header img {
     }
     .advantage-content .text-content {
       padding: 1rem;
+    }
+    .advantage .title {
+      left: 0;
     }
   }
 
@@ -683,7 +690,7 @@ header img {
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .desktop {
-      display: none;
+      display: none!;
     }
     .mobile {
       display: block;
