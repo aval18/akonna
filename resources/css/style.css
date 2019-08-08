@@ -27,6 +27,11 @@
   src: url('../fonts/The-Friday-Stroke.otf') format('opentype');
   font-style: normal;
   font-weight: 400;
+}@font-face {
+  font-family: 'Lulo-Clean';
+  src: url('../fonts/Lulo-Clean.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Lato';
@@ -415,6 +420,10 @@ header img {
     background-color: #ececec;
   }
 
+  #home .info .title {
+    font-family: 'Friday', 'Kollektif';
+  }
+
   #home .info img {
     height: 30rem;
     margin-top: 3rem;
@@ -755,13 +764,13 @@ header img {
     text-align: left;
   }
 
-  #custom span {
-    display: block;
-  }
-
   strong {
     font-size: 1.2rem;
     margin-top: 1rem;
+  }
+
+  #custom span {
+    display: block;
   }
   /* Customize the label (the container) */
 .option {
