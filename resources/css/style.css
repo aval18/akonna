@@ -14,12 +14,12 @@
 }
 @font-face {
   font-family: 'Kollektif';
-  src: url('../fonts/Kollektif/Kollektif.ttf') format('truetype');
+  src: url('../fonts/Kollektif.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
 }@font-face {
   font-family: 'Kollektif';
-  src: url('../fonts/Kollektif/Kollektif-Bold.ttf') format('truetype');
+  src: url('../fonts/Kollektif-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
 }@font-face {
@@ -281,7 +281,7 @@ header img {
 }
 
 .jumbotron .title {
-  font-family: 'Kollektif';
+  font-family: 'Kollektif', 'Quicksand';
   font-size: 3rem;
 }
 #home .jumbotron .text-content {
