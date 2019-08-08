@@ -1,16 +1,49 @@
 <?php
+function IsInjected($str) {
+    $injections = array('(\n+)',
+           '(\r+)',
+           '(\t+)',
+           '(%0A+)',
+           '(%0D+)',
+           '(%08+)',
+           '(%09+)'
+           );
+
+    $inject = join('|', $injections);
+    $inject = "/$inject/i";
+    if(preg_match($inject,$str))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+}
+
+if(IsInjected($visitor_email))
+
+{
+
+    echo "Bad email value!";
+
+    exit;
+}
 
 if($_POST["submit"]) {
-    $recipient="aval8876@gmail.com";
-    $subject="Form to email message";
+
     $name=$_POST["name"];
     $email=$_POST["email"];
     $subject=$_POST["subject"];
     $message=$_POST["message"];
 
-    $mailBody="Name: $name\nEmail: $email\n\n$message";
+    $email_subject = "New contact format submission";
+    $email_body = "Here is the message:\n $message".
 
-    mail($recipient, $subject, $mailBody, "From: $name <$email>");
+    $to = "aval8876@gmail.com";
+
+    mail($to,$email_subject,$email_body);
+
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }

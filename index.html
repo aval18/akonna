@@ -283,7 +283,7 @@
             <span>16-25: $4 each</span>
           </div>
           <div class="container">
-            <form action="./resources/php/custom.php" method="post" enctype="text/plain" target="_blank">
+            <form action="./resources/php/custom.php" method="post" enctype="text/plain" target="_blank" onsubmit="openThanksMessage">
               <span>Name</span>
               <input type="text" id="name" name="name" required>
               <span>Email</span>
@@ -317,6 +317,7 @@
               </label>
               <input name ="submit" type="submit" value="Send">
             </form>
+            <span id="thanks">Thanks for submitting! We will try to get back to you within 1-2 business days :)</span>
           </div>
         </div>
       </div>
@@ -375,13 +376,14 @@
           </div>
 
           <div class="section">
-            <form action="mailto:aval8876@gmail.com" method="post" enctype="text/plain" target="_blank">
+            <form action="mailto:aval8876@gmail.com" method="post" enctype="text/plain" onsubmit="openThanksMessage">
               <input type="text" id="name" name="name" placeholder="name" required>
               <input type="text" id="email" name="email" placeholder="email" required>
               <input type="text" id="subject" name="subject" placeholder="subject" required>
               <textarea id="message" name="message" placeholder="message" style="height:10rem" required></textarea>
               <input name ="submit" type="submit" value="Send">
             </form>
+            <span id="thanks" class="hidden">Thanks for submitting! We will try to get back to you within 1-2 business days :)</span>
           </div>`
           <footer>
   <p>©2019 BY AKONNA</p>

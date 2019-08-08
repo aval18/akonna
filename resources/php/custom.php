@@ -20,7 +20,7 @@ if($_POST["submit"]) {
     $thankYou="<p>Thank you! Your custom request has been sent.</p>";
 }
  */
-
+Allow: GET, POST, HEAD;
 
  $webmaster_email = "aval8876@gmail.com";
 
@@ -28,7 +28,7 @@ if($_POST["submit"]) {
  This bit sets the URLs of the supporting pages.
  If you change the names of any of the pages, you will need to change the values here.
  */
- $website = "../../index.html";
+ $website = "www.aval18.github.io/#custom.com";
 
  $name = $_REQUEST["name"];
  $email=$_REQUEST["email"];
@@ -50,41 +50,10 @@ if($_POST["submit"]) {
  "File: " . $myFile . "\r\n" .
  "Agree: " . $agree;
 
- /*
- The following function checks for email injection.
- Specifically, it checks for carriage returns - typically used by spammers to inject a CC list.
- */
- function isInjected($str) {
- 	$injections = array('(\n+)',
- 	'(\r+)',
- 	'(\t+)',
- 	'(%0A+)',
- 	'(%0D+)',
- 	'(%08+)',
- 	'(%09+)'
- 	);
- 	$inject = join('|', $injections);
- 	$inject = "/$inject/i";
- 	if(preg_match($inject,$str)) {
- 		return true;
- 	}
- 	else {
- 		return false;
- 	}
- }
- /*
- If email injection is detected, redirect to the error page.
- If you add a form field, you should add it here.
- */
- elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
- header( "Location: $error_page" );
- }
 
  // If we passed all previous tests, send the email then redirect to the thank you page.
- else {
 
- 	mail( "$webmaster_email", "Feedback Form Results", $msg );
+ 	mail( "$webmaster_email", "Custom inquiry", $msg );
 
  	header( "Location: $website" );
- }
  ?>

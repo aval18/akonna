@@ -91,6 +91,9 @@ a:hover {
 .mobile {
   display: none;
 }
+.hidden {
+  display: none;
+}
 
 /* Header */
 

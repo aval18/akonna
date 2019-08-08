@@ -22,3 +22,9 @@ function openPage(pageName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+// Thanks Message
+
+function openThanksMessage() {
+  document.getElementById("thanks").style.display = "block";
+}
