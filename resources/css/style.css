@@ -675,19 +675,19 @@ header img {
   }
 
   #beeshirt .hover {
-    background-image: url("../images/black-bee-square.jpg");
+    background-image: url("../images/black-bee-square.JPG");
   }
 
   #beeshirt .hover:hover {
-    background-image: url("../images/bee-shirts-square.jpg");
+    background-image: url("../images/bee-shirts-square.JPG");
   }
 
   #globeshirt .hover {
-    background-image: url("../images/globe-shirt-white.jpg");
+    background-image: url("../images/globe-shirt-white.JPG");
   }
 
   #globeshirt .hover:hover {
-    background-image: url("../images/globe-shirt-blue.jpg");
+    background-image: url("../images/globe-shirt-blue.JPG");
   }
 
   .mult img {
