@@ -274,7 +274,7 @@ header img {
 }
 
 .jumbotron {
-  background-image: url("../images/pine tree black 1.jpg");
+  background-image: url("https://github.com/aval18/aval18.github.io/blob/master/resources/images/pine-tree-black-1.JPG?raw=true");
   background-position: center;
   margin: 0;
   background-size: cover;
@@ -590,7 +590,7 @@ header img {
 /* Page shop */
 
   #shop .jumbotron  {
-    background-image: url("../images/k-heart black.jpeg");
+    background-image: url("../images/k-heart-black.jpeg");
   }
   #shop .btn a {
     padding: 2rem;
@@ -667,27 +667,27 @@ header img {
   }
 
   #hat .hover {
-    background-image: url("../images/hat white square.jpg");
+    background-image: url("../images/hat-white-square.jpg");
   }
 
   #hat .hover:hover {
-    background-image: url("../images/hat black square.jpg");
+    background-image: url("../images/hat-black-square.jpg");
   }
 
   #beeshirt .hover {
-    background-image: url("../images/black bee square.jpg");
+    background-image: url("../images/black-bee-square.jpg");
   }
 
   #beeshirt .hover:hover {
-    background-image: url("../images/bee shirts square.jpg");
+    background-image: url("../images/bee-shirts-square.jpg");
   }
 
   #globeshirt .hover {
-    background-image: url("../images/globe shirt.jpg");
+    background-image: url("../images/globe-shirt-white.jpg");
   }
 
   #globeshirt .hover:hover {
-    background-image: url("../images/globe shirt blue.jpg");
+    background-image: url("../images/globe-shirt-blue.jpg");
   }
 
   .mult img {
