@@ -675,11 +675,11 @@ header img {
   }
 
   #beeshirt .hover {
-    background-image: url("../images/bee shirts square.jpg");
+    background-image: url("../images/black bee square.jpg");
   }
 
   #beeshirt .hover:hover {
-    background-image: url("../images/bee shirts white.jpg");
+    background-image: url("../images/bee shirts square.jpg");
   }
 
   #globeshirt .hover {
