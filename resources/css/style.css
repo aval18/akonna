@@ -166,7 +166,7 @@ header img {
   padding: 0;
 }
 
-ul {
+.menu ul {
   display: flex;
   align-items: center;
   font-size: 1.1rem;
@@ -180,9 +180,6 @@ ul {
 
   nav, header {
     height: 5rem;
-  }
-  header {
-    border-bottom: 3px solid #0a5c8f;
   }
   .menu {
     display: none;
@@ -258,8 +255,8 @@ ul {
   outline: none;
   padding-right: 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
 }
 
 .dropdown-content {
