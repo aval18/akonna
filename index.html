@@ -33,7 +33,7 @@
               </button>
               <div class="dropdown-content">
                 <a href="https://akonna.square.site" target="_blank">shop akonna</a>
-                <a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">etsy</a>
+                <a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">shop on etsy</a>
                 <a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">gift card</a>
               </div>
             </div>
@@ -48,19 +48,32 @@
       </nav>
     </header>
 
-    <div class="overlay" id="mobile">
-      <a href="javascript:void(0)" class="closebtn" style="border-bottom:none;font-size:3rem;color:black" onclick="closeNav()">&times;</a>
+    <div class="mobile-overlay" id="mobile">
       <div class="overlay-content">
         <ul class="lato">
           <li onclick="openPage('home')" class="tab"><a href="#home"onclick="closeNav()" id="defaultOpen">HOME</a></li>
-          <li><a href="https://akonna.square.site" target="_blank">SHOP FROM AKONNA</a></li>
-          <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">SHOP ON ETSY</a></li>
-          <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">GIFT CARD</a></li>
-          <li onclick="openPage('custom')" class="tab"><a href="#about"onclick="closeNav()">CUSTOM</a></li>
+          <li><button class="dropbtn" onclick="openShop()">SHOP
+            <i class="fas fa-angle-double-right"></i>
+          </button></li>
+          <div class="o" id="mobileShop">
+            <div class="overlay-content">
+              <a class="backbtn" style="border-bottom:none;color:black;font-size:0.8rem;" onclick="closeShop()">
+                <i class="fas fa-angle-double-left"></i>
+                BACK
+              </a>
+              <ul class="lato">
+                <li><a href="https://akonna.square.site" target="_blank">SHOP AKONNA</a></li>
+                <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">SHOP ON ETSY</a></li>
+                <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">GIFT CARD</a></li>
+              </ul>
+            </div>
+          </div>
+          <li onclick="openPage('custom')" class="tab"><a href="#custom"onclick="closeNav()">CUSTOM</a></li>
           <li onclick="openPage('about')" class="tab"><a href="#about"onclick="closeNav()">ABOUT</a></li>
           <li onclick="openPage('contact')"class="tab"><a href="#contact"onclick="closeNav()">CONTACT</a></li>
         </ul>
       </div>
+      <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
     </div>
 
 <!-- Banner -->

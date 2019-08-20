@@ -162,7 +162,7 @@ header img {
   display: none;
 }
 
-.overlay ul {
+.mobile-overlay ul {
   padding: 0;
 }
 
@@ -172,7 +172,7 @@ header img {
   font-size: 1.1rem;
 }
 
-#mobile {
+#mobile, #mobileShop {
   display: none;
 }
 
@@ -201,45 +201,61 @@ header img {
     text-decoration: none;
     border-bottom: none;
   }
-  #mobile {
+  #mobile, #mobileShop {
     justify-content: space-between;
     position: fixed;
     overflow: hidden;
     display: block;
   }
-  .overlay {
+  .mobile-overlay, .o{
     height: 100%;
     width: 0;
     z-index: 4;
     top: 0;
     right: 0;
     background-color: white;
-    transition: 0.7s;
+    transition: 0.4s;
+  }
+  .o {
+    z-index: 5;
   }
   .overlay-content {
     position: relative;
     top: 5%;
-    width: 100%;
-    text-align: center;
-    padding-top: 3rem;
+    left: 15%;
+    text-align: left;
+    padding-top: 1rem;
     overflow: hidden;
   }
-  .overlay-content a {
+  .overlay-content li {
     display: block;
     padding: 1rem;
     font-size: 1rem;
     letter-spacing: 0.3rem;
   }
-  .overlay a:hover {
+  .overlay-content button {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    padding: 0;
+  }
+  .mobile-overlay a:hover {
     text-decoration: none;
   }
   .text-content {
     padding: 2rem;
   }
-  .overlay .closebtn {
+  .mobile-overlay .mobile-overlay-close {
     position: absolute;
+    padding-left: 1rem;
     padding-right: 1rem;
-    right: 0;
+    left: 0;
+    top: 0;
+  }
+  .backbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1rem;
   }
 }
 

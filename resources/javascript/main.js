@@ -7,6 +7,16 @@ function closeNav() {
   document.getElementById("mobile").style.width = "0%";
 }
 
+// Shop nav
+
+function openShop() {
+  document.getElementById("mobileShop").style.width = "85%";
+}
+
+function closeShop() {
+  document.getElementById("mobileShop").style.width = "0%";
+}
+
 // Pages
 
 function openPage(pageName) {
