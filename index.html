@@ -27,8 +27,16 @@
         <div class="menu">
           <ul class="lato">
             <li onclick="openPage('home')" class="tab"><a href="#home" id="defaultOpen">home</a></li>
-            <li><a href="https://akonna.square.site" target="_blank">shop</a></li>
-            <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">etsy</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">SHOP
+                <i class="fas fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="https://akonna.square.site" target="_blank">shop akonna</a>
+                <a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">etsy</a>
+                <a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">gift card</a>
+              </div>
+            </div>
             <li onclick="openPage('custom')"class="tab"><a href="#custom">custom</a></li>
             <li onclick="openPage('about')"class="tab"><a href="#about">about</a></li>
             <li onclick="openPage('contact')"class="tab"><a href="#contact">contact</a></li>
@@ -47,6 +55,7 @@
           <li onclick="openPage('home')" class="tab"><a href="#home"onclick="closeNav()" id="defaultOpen">HOME</a></li>
           <li><a href="https://akonna.square.site" target="_blank">SHOP</a></li>
           <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">ETSY</a></li>
+          <li onclick="openPage('giftCard')"class="tab"><a href="#giftCard">GIFT CARD</a></li>
           <li onclick="openPage('custom')" class="tab"><a href="#about"onclick="closeNav()">CUSTOM</a></li>
           <li onclick="openPage('about')" class="tab"><a href="#about"onclick="closeNav()">ABOUT</a></li>
           <li onclick="openPage('contact')"class="tab"><a href="#contact"onclick="closeNav()">CONTACT</a></li>
@@ -266,11 +275,19 @@
 
 </div> -->
 
+<!-- gift card -->
+    <div class="page" id="giftCard">
+      <div class="info">
+        <span class="title">Gift Cards</span>
+        <img class="subject "src="./resources/images/hat-white-2.jpg" alt="hat">
+      </div>
+    </div>
+
 <!-- Custom -->
     <div class="page" id="custom">
       <div class="info">
         <span class="title">Custom Orders</span>
-        <img class="subject "src="./resources/images/hat-white-3.jpg" alt="hat">
+        <img class="subject "src="./resources/images/processMonstera.jpg" alt="embroidery process">
       </div>
       <div class="section">
         <div class="detail container">
