@@ -10,7 +10,7 @@ function closeNav() {
 // Shop nav
 
 function openShop() {
-  document.getElementById("mobileShop").style.width = "85%";
+  document.getElementById("mobileShop").style.width = "87%";
 }
 
 function closeShop() {
