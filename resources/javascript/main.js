@@ -5,6 +5,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mobile").style.width = "0%";
+  document.getElementById("mobileShop").style.width = "0%";
 }
 
 // Shop nav
