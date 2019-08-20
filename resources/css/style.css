@@ -110,7 +110,7 @@ header {
   background-color: white;
   width: 100%;
   top: 0;
-  border-bottom: 5px #0a5c8f solid;
+  box-shadow: 0px 1px 15px #888888;
 }
 
 nav a {
@@ -142,8 +142,7 @@ nav li {
   display: inline;
   list-style: none;
   text-transform: uppercase;
-  font-size: 1.1rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 header img {
@@ -157,6 +156,7 @@ header img {
 
 .menu {
   padding-right: 15rem;
+  overflow: hidden;
 }
 .open {
   display: none;
@@ -164,6 +164,12 @@ header img {
 
 .overlay ul {
   padding: 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
 }
 
 #mobile {
@@ -238,6 +244,48 @@ header img {
     padding-right: 1rem;
     right: 0;
   }
+}
+
+.dropdown {
+  overflow: hidden;
+  float: left;
+  position: static;
+  top:100%;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding-right: 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+  visibility: hidden;
+  display: block;
+  min-width: 270px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  top: 60%;
+  margin: 0;
+  padding-top: 1rem;
+  opacity: 0;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 /* Banner */
