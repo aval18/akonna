@@ -92,6 +92,10 @@ a:hover {
 .hide {
   display: none;
 }
+button {
+  background-color: none;
+  border: none;
+}
 
 /* Header */
 
@@ -232,6 +236,7 @@ header img {
     font-size: 1rem;
     letter-spacing: 0.3rem;
     padding: 0;
+    background-color: #ececec;
   }
   .mobile-overlay a:hover {
     text-decoration: none;
@@ -245,6 +250,7 @@ header img {
     padding-right: 1rem;
     left: 0;
     top: 0;
+    background-color: #ececec;
   }
   .backbtn {
     position: absolute;
