@@ -463,15 +463,15 @@ header img {
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .gallery span {
     font-size: 1.5rem;
-    padding: 1rem;
+    text-align: center;
+    padding: 0;
   }
   .gallery {
     margin: 0;
     height: 12rem;
-    background-color: #ececec
   }
   .gallery i {
-    font-size: 2rem;
+    display: none;
   }
 }
 
