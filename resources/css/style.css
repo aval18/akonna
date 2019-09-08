@@ -429,11 +429,35 @@ header img {
     justify-content: center;
     margin: 3rem;
     align-items: center;
-    height: 25rem;
+    height: 30rem;
+    position: relative;
   }
 
   .gallery span {
     padding: 2rem;
+    font-weight: bold;
+  }
+  .gallery a:hover {
+    text-decoration: none;
+    color: #0a5c8f;
+    transition: 0.3s;
+  }
+
+  .insta {
+    background-image: url("../images/shipyards.JPG");
+  }
+  .background {
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
