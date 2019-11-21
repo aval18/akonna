@@ -60,7 +60,7 @@ ol, ul {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 10rem;
   text-align: center;
 }
 
@@ -302,7 +302,7 @@ header img {
   transition: opacity 0.3s;
 }
 
-/* Banner */
+/* Banner
 
 .banner {
   background-color: #ececec;
@@ -315,12 +315,12 @@ header img {
   text-transform: uppercase;
   line-height: 4.5rem;
   padding-top: 8rem;
-}
+} */
 
 .special {
   color: #c4d4e7;
 }
-
+/*
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .banner {
     line-height: 1rem;
@@ -340,6 +340,7 @@ header img {
   background-position: center;
   margin: 0;
   background-size: cover;
+  padding-top: 112px;
 }
 
 .jumbotron p {
@@ -397,7 +398,7 @@ header img {
     line-height: 2rem;
   }
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   #home .jumbotron .title {
     font-size: 2rem;
@@ -479,9 +480,10 @@ header img {
 
 
   .info {
-    display: flex;
-    margin: 5rem;
+    display: block;
+    margin: 140px 5rem 0 5rem;
     justify-content: center;
+    text-align: center;
   }
   .subject {
     padding: 2rem;
@@ -491,7 +493,6 @@ header img {
     height: 40rem;
     width: 80rem;
     object-fit: cover;
-    margin-top: 5rem;
   }
 
   #home .info {
@@ -501,9 +502,7 @@ header img {
   .info .title {
     font-family: 'Friday', 'Kollektif';
     letter-spacing: 0.8rem;
-    position: absolute;
     padding: 1.5rem;
-    background-color: #ececec;
   }
 
   #home .info .title {
@@ -541,12 +540,18 @@ header img {
   .code .title {
     right: 5%;
     margin-top: 3rem;
+}
+    .code .title, .advantage .title {
+    font-size: 5rem;
+    position: absolute;
+    background-color: #ececec;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .info {
       margin: 2rem;
       display: block;
+      margin-top: 90px;
     }
     .info img {
       height: 20rem;
@@ -560,7 +565,7 @@ header img {
       padding: 0;
     }
     .info .title {
-      font-size: 2rem;
+      font-size: 3rem;
       letter-spacing: 0.6rem;
       padding: 1rem;
       position: relative;
@@ -576,6 +581,7 @@ header img {
       margin: auto;
       display: block;
       padding: 1rem;
+      border: none;
     }
     .info .vector {
       display: none;
@@ -591,6 +597,9 @@ header img {
       padding: 0.5rem;
       right: 0;
     }
+    .code .subject {
+      border: 2px solid #0a5c8f;
+    }
   }
 
 
@@ -603,6 +612,7 @@ header img {
   .advantage {
     padding: 0;
     border: none;
+    display: flex;
   }
 
   .advantage-content {
@@ -611,7 +621,7 @@ header img {
   .advantage-box {
     display: flex;
     margin-top: 7rem;
-    border-color: #e1afb4;
+    border: 3px solid #e1afb4;
   }
   .advantage-content span {
     font-size: 2rem;
@@ -623,8 +633,11 @@ header img {
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
-    .advantage-box {
+    .advantage {
       display: block;
+    }
+    .advantage .subject {
+      border: 3px solid #e1afb4;
     }
     .advantage-content {
       width: 100%;
@@ -640,6 +653,11 @@ header img {
     }
     .advantage .title {
       left: 0;
+      background-color: white;
+    }
+    .advantage .title, .code .title {
+      background-color: white;
+      font-size: 2.5rem;
     }
   }
 
