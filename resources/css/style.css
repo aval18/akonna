@@ -55,6 +55,11 @@ body {
   height: 100%;
 }
 
+p {
+  font-family: 'Lato';
+  font-weight: 100;
+}
+
 ol, ul {
   margin: 0;
 }
@@ -535,7 +540,7 @@ header img {
     margin-top: 12rem;
     margin-left: 2rem;
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 2.8rem;
   }
   .code .title {
     right: 5%;
@@ -622,6 +627,7 @@ header img {
     display: flex;
     margin-top: 7rem;
     border: 3px solid #e1afb4;
+    padding: 0;
   }
   .advantage-content span {
     font-size: 2rem;
