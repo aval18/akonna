@@ -213,6 +213,9 @@ header img {
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
 
+  header {
+    display: flex;
+  }
   nav, header {
     height: 5rem;
   }
@@ -374,8 +377,7 @@ header img {
 }
 
 .jumbotron {
-  background-image: url("https://github.com/aval18/aval18.github.io/blob/master/resources/images/pine-tree-black-1.JPG?raw=true");
-  background-position: center;
+  background-image: url("../images/pine-tree-crewneck-1.jpg");
   margin: 0;
   background-size: cover;
   padding-top: 112px;
@@ -394,15 +396,15 @@ header img {
   font-size: 3rem;
 }
 #home .jumbotron .text-content {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .inside {
   background-color: white;
   width: 35rem;
-  height: 27rem;
+  height: 25rem;
   margin: auto;
-  margin-top: 9rem;
+  margin-top: 14rem;
   margin-bottom: 9rem;
   margin-right: 10rem;
   text-align: center;
@@ -457,6 +459,8 @@ header img {
   #home .jumbotron img {
     display: block;
     width: 100%;
+    object-position: top;
+    margin-top: 3rem;
   }
 
 }
@@ -483,7 +487,7 @@ header img {
   }
 
   .insta {
-    background-image: url("../images/shipyards.JPG");
+    background-image: url("../images/shipyards-1.JPG");
   }
   .background {
     background-size: 100%;
@@ -519,7 +523,7 @@ header img {
 
   .info {
     display: block;
-    margin: 140px 5rem 0 5rem;
+    margin: 140px 5rem 1rem 5rem;
     justify-content: center;
     text-align: center;
     max-width: 1400px;
@@ -565,7 +569,7 @@ header img {
     margin-top: 0;
     border: none;
   }
-  .code .subject {
+  #home .subject {
     border: 3px solid #0a5c8f;
     display: flex;
   }
@@ -579,11 +583,12 @@ header img {
   .code .title {
     right: 5%;
     margin-top: 3rem;
+    color: white;
 }
     .code .title, .advantage .title {
     font-size: 5rem;
     position: absolute;
-    background-color: #ececec;
+    background-color: #c4d4e7;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
@@ -636,8 +641,9 @@ header img {
       padding: 0.5rem;
       right: 0;
     }
-    .code .subject {
+    #home .subject {
       border: 2px solid #0a5c8f;
+      display: block;
     }
   }
 
@@ -675,9 +681,6 @@ header img {
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .advantage {
       display: block;
-    }
-    .advantage .subject {
-      border: 3px solid #e1afb4;
     }
     .advantage-content {
       width: 100%;
@@ -787,11 +790,14 @@ header img {
     height: auto;
     width: 100%;
   }
+  */
 
   .row-1, .row-2,.row-3 {
     display: flex;
     justify-content: space-around;
   }
+
+  /*
 
   .row-1 .product {
     margin-top: 3rem;
@@ -1048,6 +1054,26 @@ input[type=submit]:hover {
   #contact .section {
     padding: 1rem;
   }
+}
+
+/* Events */
+
+.container {
+  max-width: 1400px;
+}
+.box {
+  width: 25%;
+  height: 18rem;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #c4d4e7;
+}
+.box-title {
+  font-size: 2rem;
+  display: block;
+}
+.highlight {
+  font-family: "Red Hat Display";
 }
   /* Footer */
 
