@@ -1073,13 +1073,35 @@ input[type=submit]:hover {
   padding: 2rem;
   margin: 2rem;
   background-color: #c4d4e7;
+  color: white;
 }
 .box-title {
   font-size: 2rem;
   display: block;
+  font-weight: bold;
+  color: black;
 }
 .highlight {
   font-family: "Red Hat Display";
+}
+.box .box-title a:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .row-1,.row-2,.row-3 {
+    display: block;
+  }
+  .box {
+    width: 90%;
+    height: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .box-title {
+    font-size: 1.5rem;
+  }
 }
   /* Footer */
 
