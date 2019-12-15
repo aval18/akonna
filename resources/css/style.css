@@ -528,7 +528,9 @@ header img {
 
   .info {
     display: block;
-    margin: 140px 5rem 1rem 5rem;
+    margin: auto;;
+    margin-top: 140px;
+    margin-bottom: 1rem;
     justify-content: center;
     text-align: center;
     max-width: 1400px;
@@ -544,7 +546,9 @@ header img {
   }
 
   #home .info {
-    margin: 7rem
+    margin: auto;
+    margin-top:7rem;
+    margin-bottom: 7rem;
   }
 
   .info .title {
@@ -709,6 +713,17 @@ header img {
       font-size: 2.5rem;
     }
   }
+    @media only screen and (min-width: 1500px) {
+      .info .vector {
+        display: none;
+      }
+      .code .title {
+        right: auto;
+      }
+      .advantage .title {
+        left: 20%;
+      }
+    }
 
   /* Stip */
 
@@ -980,6 +995,8 @@ form span {
     display: flex;
     padding: 2rem 5rem;
     justify-content: center;
+    max-width: 1400px;
+    margin: auto;
   }
 
   .subtitle {
