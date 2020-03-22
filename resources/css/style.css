@@ -385,7 +385,8 @@ header img {
   background-image: url("../images/pinetree-tote.JPG");
   margin: 0;
   background-size: cover;
-  padding-top: 112px;
+  background-position: top;
+  margin-top: 112px;
 }
 
 .jumbotron p {
@@ -457,6 +458,7 @@ header img {
   }
   .jumbotron {
     background-image: none;
+    margin-top: 80px;
   }
   #home .jumbotron {
     padding: 0;
