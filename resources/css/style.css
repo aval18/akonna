@@ -382,7 +382,7 @@ header img {
 }
 
 .jumbotron {
-  background-image: url("../images/pinetree-tote.JPG");
+  background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/pinetree-tote.jpg");
   margin: 0;
   background-size: cover;
   background-position: top;
