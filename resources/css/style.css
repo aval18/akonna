@@ -1,18 +1,5 @@
 /* Font Face */
 @font-face {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Karla Bold'), local('Karla-Bold'), url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
   font-family: 'Kollektif';
   src: url('../fonts/Kollektif.ttf') format('truetype');
   font-style: normal;
@@ -41,36 +28,11 @@
   font-display: swap;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Red Hat Display'), local('RedHatDisplay-Regular'), url(https://fonts.gstatic.com/s/redhatdisplay/v3/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6hR4jNCA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Red Hat Display Medium'), local('RedHatDisplay-Medium'), url(https://fonts.gstatic.com/s/redhatdisplay/v3/8vIV7wUr0m80wwYf0QCXZzYzUoToDh20aqrAIkRQbg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Red Hat Display';
+} @font-face {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local('Red Hat Display Bold'), local('RedHatDisplay-Bold'), url(https://fonts.gstatic.com/s/redhatdisplay/v3/8vIV7wUr0m80wwYf0QCXZzYzUoToRhu0aqrAIkRQbg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local('Red Hat Display Black'), local('RedHatDisplay-Black'), url(https://fonts.gstatic.com/s/redhatdisplay/v3/8vIV7wUr0m80wwYf0QCXZzYzUoTofhm0aqrAIkRQbg.woff2) format('woff2');
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -82,12 +44,11 @@ html {
 }
 
 body {
-  font-family: 'Karla';
+  font-family: 'Lato';
   height: 100%;
 }
 
 p {
-  font-family: 'Lato';
   font-weight: 100;
 }
 
@@ -138,24 +99,20 @@ button {
 /* Header */
 
 header {
-  color: #0a5c8f;
   position: fixed;
   z-index: 3;
   background-color: white;
   width: 100%;
   top: 0;
-  /* box-shadow: 0px 1px 15px #888888; */
   padding: 1rem;
   transition: 0.2s;
   font-size: 3rem;
 }
 
-nav a {
-  color: #0a5c8f;
-}
-
 header a:hover {
   border-bottom: 2px solid #e1afb4;
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -187,6 +144,7 @@ header img {
 .logo {
   padding-left: 15rem;
   font-family: 'Kollektif','Lato';
+  color: #0a5c8f;
 }
 
 .menu {
@@ -241,7 +199,6 @@ header img {
     padding: 1rem;
   }
   header a:hover {
-    text-decoration: none;
     border-bottom: none;
   }
   #mobile, #mobileShop {
@@ -386,7 +343,7 @@ header img {
   margin: 0;
   background-size: cover;
   background-position: top;
-  margin-top: 112px;
+  margin-top: 100px;
 }
 
 .jumbotron p {
@@ -489,7 +446,7 @@ header img {
   }
   .gallery a:hover {
     text-decoration: none;
-    color: #0a5c8f;
+    color: white;
     transition: 0.3s;
   }
 
@@ -539,18 +496,11 @@ header img {
   }
   .subject {
     padding: 2rem;
-    border: 3px solid #ececec;
   }
   .info img {
     height: 40rem;
     width: 80rem;
     object-fit: cover;
-  }
-
-  #home .info {
-    margin: auto;
-    margin-top:7rem;
-    margin-bottom: 7rem;
   }
 
   .info .title {
@@ -577,11 +527,10 @@ header img {
   }
 
   .code {
-    margin-top: 0;
+    margin: 7rem;
     border: none;
   }
   #home .subject {
-    border: 3px solid #0a5c8f;
     display: flex;
   }
 
@@ -595,11 +544,11 @@ header img {
     right: 5%;
     margin-top: 3rem;
     color: white;
+    background-color: #c4d4e7;
 }
     .code .title, .advantage .title {
     font-size: 5rem;
     position: absolute;
-    background-color: #c4d4e7;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
@@ -636,7 +585,6 @@ header img {
       margin: auto;
       display: block;
       padding: 1rem;
-      border: none;
     }
     .info .vector {
       display: none;
@@ -653,7 +601,6 @@ header img {
       right: 0;
     }
     #home .subject {
-      border: 2px solid #0a5c8f;
       display: block;
     }
   }
@@ -669,6 +616,9 @@ header img {
     padding: 0;
     border: none;
     display: flex;
+    margin: auto;
+    margin-top:7rem;
+    margin-bottom: 7rem;
   }
 
   .advantage-content {
@@ -676,8 +626,8 @@ header img {
   }
   .advantage-box {
     display: flex;
+    justify-content: center;
     margin-top: 7rem;
-    border: 3px solid #e1afb4;
     padding: 0;
   }
   .advantage-content span {
@@ -720,7 +670,10 @@ header img {
         display: none;
       }
       .code .title {
-        right: auto;
+        right: 20%;
+      }
+      .code {
+        margin: auto;
       }
       .advantage .title {
         left: 20%;
@@ -946,13 +899,13 @@ header img {
 
   strong {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   #custom span {
     display: block;
   }
-  /* Customize the label (the container) */
+  /* Customize the label (the container)
 .option {
   display: block;
   position: relative;
@@ -966,7 +919,7 @@ header img {
   font-weight: normal;
 }
 
-/* Hide the browser's default radio button */
+/* Hide the browser's default radio button
 .option input {
   position: absolute;
   opacity: 0;
@@ -975,7 +928,7 @@ header img {
   width: 0;
 }
 
-/* Create a custom radio button */
+/* Create a custom radio button
 .checkmark {
   position: absolute;
   top: 0;
@@ -1028,9 +981,6 @@ form span {
     .subtitle{
       font-size: 2.5rem;
     }
-    #about .text-content {
-      padding: 1rem;
-    }
     .section {
       padding: 0;
       display: block;
@@ -1048,7 +998,7 @@ form span {
   }
 
 
-  /* Contact */
+  /* Contact
 
 
   input[type=text], select, textarea {
@@ -1077,9 +1027,12 @@ input[type=submit]:hover {
   color: #0a5c8f;
   border: 3px solid #0a5c8f;
   transition: 0.3s;
-}
+} */
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   #contact .section {
+    padding: 1rem;
+  }
+  .section .text-content {
     padding: 1rem;
   }
 }
@@ -1102,9 +1055,6 @@ input[type=submit]:hover {
   display: block;
   font-weight: bold;
   color: black;
-}
-.highlight {
-  font-family: "Red Hat Display";
 }
 .box .box-title a:hover {
   color: white;
