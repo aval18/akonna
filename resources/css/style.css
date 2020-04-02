@@ -482,6 +482,10 @@ header img {
   }
 }
 
+/* Order */
+
+
+
 /* info/code */
 
 
@@ -513,7 +517,7 @@ header img {
     font-family: 'Friday', 'Kollektif';
   }
 
-  #home .info img {
+  #home .code img {
     height: 30rem;
     margin-top: 3rem;
     width: auto;
@@ -1028,6 +1032,7 @@ input[type=submit]:hover {
   border: 3px solid #0a5c8f;
   transition: 0.3s;
 } */
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   #contact .section {
     padding: 1rem;
