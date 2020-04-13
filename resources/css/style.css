@@ -88,9 +88,7 @@ a:hover {
 .mobile {
   display: none;
 }
-.hide {
-  display: none;
-}
+
 button {
   background-color: none;
   border: none;
@@ -310,33 +308,6 @@ nav li {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-/* Banner
-
-.banner {
-  background-color: #ececec;
-  margin: auto;
-  color: #2f2e2e;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  line-height: 4.5rem;
-  padding-top: 8rem;
-} */
-
-.special {
-  color: #c4d4e7;
-}
-/*
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  .banner {
-    line-height: 1rem;
-    font-size: 0.6rem;
-    padding: 6rem 1rem 1rem 1rem;
-  }
 }
 
 /* Jumbotron */
