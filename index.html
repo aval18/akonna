@@ -22,11 +22,10 @@
       <nav>
         <div class="logo">
           <img src="resources/images/logo.png" alt="Logo">
-          <span>akonna</span>
+          <span onclick="openPage('home')" class="tab"><a href="#home" id="defaultOpen">akonna</a></span>
         </div>
         <div class="menu">
           <ul class="lato">
-            <li onclick="openPage('home')" class="tab"><a href="#home" id="defaultOpen">home</a></li>
             <div class="dropdown">
               <button class="dropbtn">SHOP
                 <i class="fas fa-angle-down"></i>
@@ -52,7 +51,6 @@
     <div class="mobile-overlay" id="mobile">
       <div class="overlay-content mobile-overlay-main">
         <ul class="lato">
-          <li onclick="openPage('home')" class="tab"><a href="#home"onclick="closeNav()" id="defaultOpen">HOME</a></li>
           <li><button class="dropbtn" onclick="openShop()">SHOP
             <i class="fas fa-angle-double-right"></i>
           </button></li>
@@ -109,24 +107,14 @@
 
       <!-- Custom photo -->
 
-      <div class="info code order">
+      <div class="info order">
         <span class="title">Need a custom order?</span>
         <div class="subject">
-          <img src="./resources/images/monstera-hoodie-green-2.jpg" alt="Custom Green Monstera Embroidered Hoodie">
-          <p>This green monstera hoodie is a custom order! Based off of the customer favourite, the tan monstera hoodie, a few more leaves were added with a custom colour for a small additional price. If you are looking for a custom embroidery or heat press (screen printing), check out the custom page in the navigation!</p>
+          <img src="./resources/images/monstera-hoodie-green-3.jpg" alt="Custom Green Monstera Embroidered Hoodie">
+          <p>This green monstera hoodie is a custom order! Based off of the customer favourite, the tan monstera hoodie, a few more leaves were added with a custom colour for a small additional price. If you are looking for a custom embroidery or vinyl heat press, check out the custom page in the navigation!</p>
         </div>
       </div>
 
-<!-- Code -->
-
-      <div class="info code">
-        <span class="title">I coded this website myself!</span>
-        <img src="./resources/images/tropical-leaf.png" alt="Leaf vector" class="vector">
-        <div class="subject">
-          <img src="https://raw.githubusercontent.com/aval18/aval18.github.io/master/resources/images/code.jpg" alt="code">
-          <p>In the summer of 2018, I had a burst of interest to learn how to code. My brother was a coder, and I was very eager to start to learn how to make websites! I took a 10-week intensive at Codecademy, and that's how my coding journey started! Less than a year after taking the intensive, I started to code this website and released it during the end of Summer of 2019!</p>
-        </div>
-      </div>
 
 <!-- Advantages -->
 
@@ -136,19 +124,19 @@
           <div class="advantage-content">
             <div class="text-content">
               <span>SUPPORT</span>
-              <p>Partial profits go to the Vancouver General Hospital for cancer research, while the rest goes back into the business! Support a youth entrepenur learning the ropes of business :)</p>
+              <p>Partial profits go to the Vancouver General Hospital for cancer research, while the rest goes back into the business! Support a youth entrepreneur learning the ropes of business!</p>
             </div>
           </div>
           <div class="advantage-content">
             <div class="text-content">
               <span>TIME & EFFORT</span>
-              <p>All products designs are original and takes lots of time to make them perfect! And because all of the shirts are made to order, each one is embroidered with love and care <3</p>
+              <p>All products designs are original and takes lots of time to make them perfect! Each one is also made to order, ensuring a high quality standard for all products.</p>
             </div>
           </div>
           <div class="advantage-content">
             <div class="text-content">
               <span>CUSTOMER CARE</span>
-              <p>We want to make sure your time with Akonna is well spent. If you have any questions or concerns, please send an email our way through the contact section in the navigation ^^</p>
+              <p>We want to make sure your time with Akonna is well spent. If you have any questions or concerns, please send an email our way through the contact section in the navigation.</p>
             </div>
           </div>
         </div>
@@ -157,13 +145,50 @@
       <div class="strip">
         <i class="fas fa-dolly-flatbed fa-2x"></i>
         <div class="text-content">
-          <span>free shipping for patches<br>shirts, and totes in canada</span>
+          <span>free shipping over $50 in Canada and US</span>
         </div>
           <i class="fas fa-shipping-fast fa-2x"></i>
       </div>
 
+<!-- Footer -->
+
       <footer>
-        <p>©2020 BY AKONNA</p>
+        <div class="footer-content">
+          <div class="logo">
+            <img src="resources/images/logo.png" alt="Logo">
+            <span>akonna</span>
+          </div>
+          <div class="footer-section">
+            <div class="footer-box">
+              <div class="colour-box-small"></div>
+              <span>Social</span>
+              <ul>
+                <li><a href="https://www.instagram.com/shopakonna" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/pg/shopakonna/shop" target="_blank">Facebook</a></li>
+                <li onclick="openPage('contact')" class="tab"><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <div class="colour-box-small"></div>
+              <span>Shop</span>
+              <ul>
+                <li><a href="https://akonna.square.site" target="_blank">Akonna</a></li>
+                <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">Etsy</a></li>
+                <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">Gift Card</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <div class="colour-box-small"></div>
+              <span>Learn</span>
+              <ul>
+                <li onclick="openPage('custom')" class="tab"><a href="#custom">Custom</a></li>
+                <li onclick="openPage('about')" class="tab"><a href="#about">About</a></li>
+                <li onclick="openPage('events')" class="tab"><a href="#events">Events</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>©2020 AKONNA</p>
       </footer>
 
     </div>
@@ -327,7 +352,7 @@
             <span>16-30: $11 each</span>
           </div>
           <div class="text-content">
-            <span class="subtitle">Screen Printing (Heat Press)</span>
+            <span class="subtitle">Vinyl Heat Press</span>
             <span>I offer custom heat press printing for any type of design up to 11 x 11 inches in one colour. I can press any type of apparel, including other accessories such as hats and plates. There is no set minimum or maximum, but rough maximum would be around 75 units. Turnaround time is much quicker than embroidery. I can either source the item you would like for a small additional cost, or you can send the items to print.</span>
           </div>
             <div class="text-content" style="padding:1rem 3rem">
@@ -396,10 +421,10 @@
       </div>
 
       <div class="section">
-        <div class="detail">
+        <div class="detail container">
           <div>
             <div class="text-content">
-              <span class="subtitle">Coder & Fashion Lover Entrepreneur</span>
+              <span class="subtitle">Coder and Youth Entrepreneur</span>
               <span>I'm Ava, and I started Akonna in April, 2018 as a 12 year old youth entrepreneur. I have a love for business, with a common theme within the patches and hats - exploration. I love travelling, and I wanted to display my passion through the collection. The shirts have a bit of a different story, with a variety of designs portraying nature and animals that hold significant value to myself. I also have a love for coding, as this website is all coded by myself!</span>
             </div>
           </div>
@@ -420,7 +445,8 @@
         </div>
 
         <div class="vid">
-          <video controls muted src="./resources/videos/timelapseVid.MOV" autoplay poster="posterimage.jpg">Your browser does not support the video.</video>
+          <img src="./resources/images/heart-and-bee-shirt-1.JPG" alt="Embroidered heart and bee shirt">
+          <!--<video controls muted src="" autoplay poster="posterimage.jpg">Your browser does not support the video.</video>-->
         </div>
       </div>
       <footer>
