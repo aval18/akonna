@@ -490,6 +490,47 @@ nav li {
   }
 }
 
+/* Product feature */
+
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    margin:5rem 3rem;
+    margin-bottom: 0;
+  }
+  .feature-box {
+    width: 32%;
+  }
+  .feature-box img {
+    width: 100%;
+    object-fit: cover;
+    height: 30rem;
+  }
+  .feature-box p {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Kollektif','Lato';
+  }
+
+  @media only screen and (min-width:300px) and (max-width:900px) {
+    .feature {
+      display: block;
+      margin:0;
+    }
+    .feature-box {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 1500px){
+
+      .gallery, .feature{
+        max-width: 2000px;
+        margin: auto;
+        margin-top: 5rem;
+      }
+    }
+
 /* Info Order */
 
   .info {
@@ -517,6 +558,9 @@ nav li {
     height: 30rem;
     margin-top: 3rem;
     width: auto;
+  }
+  #home .info {
+    margin-top: 1rem;
   }
 
   #home .subject {
@@ -918,47 +962,6 @@ nav li {
   #custom span {
     display: block;
   }
-  /* Customize the label (the container)
-.option {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: normal;
-}
-
-/* Hide the browser's default radio button
-.option input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom radio button
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #eee;
-  border-radius: 50%;
-  padding: 0.8rem;
-}
-
-.option input:checked ~ .checkmark {
-  background-color: #0a5c8f;
-}
-
-form span {
-  padding: 1rem 0;
-}
-
 
   /* About */
 
@@ -1001,7 +1004,7 @@ form span {
       font-size: 2.5rem;
     }
     .section {
-      padding: 0;
+      padding: 1rem;
       display: block;
     }
     .vid video {
@@ -1031,8 +1034,9 @@ form span {
 
 /* Events */
 
-.container {
-  max-width: 1400px;
+.market {
+  max-width: 2000px;
+  margin: auto;
 }
 .box {
   width: 25%;
@@ -1068,6 +1072,9 @@ form span {
   }
   .desktop {
     display: none;
+  }
+  .market {
+    padding: 1rem;
   }
 }
   /* Footer */
