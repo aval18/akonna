@@ -458,7 +458,8 @@ nav li {
   }
 
   .insta {
-    background-image: url("../images/shipyards-1.JPG");
+    background-image: url("../images/blue-1.jpg");
+    background-size: cover;
   }
   .background {
     background-size: 100%;
