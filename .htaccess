@@ -1,3 +1,5 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.akonna\.com [NC]
-RewriteRule ^(.*)$ https://akonna.com/$1 [L,R=301]
+RewriteRule ^(.*)$ http://akonna.com/$1 [L,R=301]
+</IfModule>
