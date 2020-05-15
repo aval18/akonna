@@ -71,13 +71,6 @@ ol, ul {
   font-size: 3rem;
 }
 
-.page {
-  height: 100%;
-  display: none;
-  padding-top: 20px;
-  margin: 0;
-}
-
 a:hover {
   color: inherit;
 }
