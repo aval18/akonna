@@ -74,6 +74,9 @@ ol, ul {
 a:hover {
   color: inherit;
 }
+a {
+  color: black;
+}
 
 .lato {
   font-family: 'Lato';
@@ -136,8 +139,11 @@ nav li {
 .logo {
   padding-left: 15rem;
   font-family: 'Kollektif','Lato';
-  color: #0a5c8f;
   font-size: 3rem;
+  color: #0a5c8f;
+}
+.logo a {
+  color: #0a5c8f;
 }
 .logo a:hover {
   text-decoration: none;
@@ -1027,6 +1033,10 @@ nav li {
   text-decoration: none;
   transition: 0.2s;
 }
+.market .highlight{
+  padding: 2rem;
+  padding-left: 20rem;
+}
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .row-1,.row-2,.row-3 {
     display: block;
@@ -1045,6 +1055,9 @@ nav li {
   }
   .market {
     padding: 1rem;
+  }
+  .market .highlight {
+    padding-left: 1rem;
   }
 }
   /* Footer */
