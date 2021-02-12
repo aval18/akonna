@@ -17,3 +17,53 @@ function openShop() {
 function closeShop() {
   document.getElementById("mobileShop").style.width = "0%";
 }
+
+// Activate Carousel
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel1").carousel();
+
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+    $("#myCarousel1").carousel(0);
+  });
+  $(".item2").click(function(){
+    $("#myCarousel1").carousel(1);
+  });
+  $(".item3").click(function(){
+    $("#myCarousel1").carousel(2);
+  });
+
+  // Enable Carousel Controls
+  $(".left").click(function(){
+    $("#myCarousel1").carousel("prev");
+  });
+  $(".right").click(function(){
+    $("#myCarousel1").carousel("next");
+  });
+});
+
+// Activate Carousel
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel2").carousel();
+
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+    $("#myCarousel2").carousel(0);
+  });
+  $(".item2").click(function(){
+    $("#myCarousel2").carousel(1);
+  });
+  $(".item3").click(function(){
+    $("#myCarousel2").carousel(2);
+  });
+
+  // Enable Carousel Controls
+  $(".left").click(function(){
+    $("#myCarousel2").carousel("prev");
+  });
+  $(".right").click(function(){
+    $("#myCarousel2").carousel("next");
+  });
+});

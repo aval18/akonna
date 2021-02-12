@@ -10,11 +10,6 @@
   font-style: normal;
   font-weight: 700;
 }@font-face {
-  font-family: 'Friday';
-  src: url('../fonts/The-Friday-Stroke.otf') format('opentype');
-  font-style: normal;
-  font-weight: 400;
-}@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -316,18 +311,21 @@ nav li {
 }
 
 .jumbotron {
-  background-image: url("../images/pinetree-tote.jpg");
   margin: 0;
   background-size: cover;
   background-position: top;
   margin-top: 100px;
 }
 
+#home .jumbotron {
+  background-image: url("../images/pinetree-tote.jpg");
+}
+
 .jumbotron p {
   font-size: 1.3rem;
 }
 
-#home .jumbotron img {
+.jumbotron img {
   display: none;
 }
 
@@ -339,7 +337,7 @@ nav li {
   padding: 2rem;
 }
 
-.inside {
+.jumbotron-inside {
   background-color: white;
   width: 35rem;
   height: 25rem;
@@ -368,8 +366,39 @@ nav li {
   transition: 0.2s;
 }
 
+.parallax-inside {
+  height: 35rem;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-page1 {
+  background-image: url("../images/blue-2.jpg");
+  background-position: bottom;
+}
+.parallax-page2 {
+  background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/tote-leaf.jpg");
+}
+.parallax-page3 {
+  background-image: url("../images/patch-group-edit.jpg");
+  background-position: 0 40%;
+}
+.parallax-page4 {
+  background-image: url("../images/shipyards-2.JPG");
+}
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
-  #home .inside {
+  #home .jumbotron-inside {
     margin: 0;
     height: 20rem;
     width: 100%;
@@ -393,15 +422,29 @@ nav li {
   .jumbotron {
     background-image: none;
     margin-top: 80px;
-  }
-  #home .jumbotron {
     padding: 0;
   }
-  #home .jumbotron img {
+  .jumbotron img {
     display: block;
     width: 100%;
     object-position: top;
     margin-top: 3rem;
+  }
+  .parallax {
+    background-attachment: scroll;
+  }
+  .parallax-inside {
+    width: auto;
+    height: 20rem;
+  }
+  .parallax img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .parallax-page1, .parallax-page2, .parallax-page3 {
+    background-position: center;
+    object-position: center;
   }
 
 }
@@ -411,7 +454,6 @@ nav li {
   .gallery {
     display: flex;
     justify-content: center;
-    margin: 3rem;
     align-items: center;
     height: 30rem;
     position: relative;
@@ -428,7 +470,7 @@ nav li {
   }
 
   .insta {
-    background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/shipyards-1.JPG");
+    background-image: url("../images/monstera-hoodie-green-2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -469,10 +511,13 @@ nav li {
 /* Product feature */
 
   .feature {
-    display: flex;
-    justify-content: space-between;
     margin:5rem 3rem;
     margin-bottom: 0;
+  }
+
+  .feature-section {
+    display: flex;
+    justify-content: space-between;
   }
   .feature-box {
     width: 32%;
@@ -482,20 +527,48 @@ nav li {
     object-fit: cover;
     height: 30rem;
   }
-  .feature-box p {
+  .feature-box p, .carousel-inner p {
     text-align: center;
     padding: 1.5rem;
     font-size: 1.5rem;
     font-family: 'Kollektif','Lato';
   }
+  .feature .text-content {
+    padding-top: 0;
+  }
+  .carousel {
+    display: none;
+  }
 
   @media only screen and (min-width:300px) and (max-width:900px) {
     .feature {
-      display: block;
-      margin:0;
+      display: none;
     }
-    .feature-box {
+    .carousel {
+      display: block;
+    }
+    .carousel-inner p {
+      padding-top: 0;
+    }
+    .carousel-inner>.item>img {
+      padding: 3rem;
+      height: 30rem;
       width: 100%;
+      object-fit: cover;
+    }
+    .carousel .text-content {
+      padding-top: 0;
+    }
+    .carousel-control.right, .carousel-control.left{
+      background-image: none;
+
+    }
+    .glyphicon {
+      color: #333;
+      text-shadow: none;
+    }
+    .carousel-caption {
+      text-shadow: none;
     }
   }
   @media only screen and (min-width: 1500px){
@@ -505,9 +578,12 @@ nav li {
         margin: auto;
         margin-top: 5rem;
       }
+      .feature-box p {
+        font-size: 1.7rem;
+      }
     }
 
-/* Info Order */
+/* Info and Half Display */
 
   .info {
     display: block;
@@ -527,44 +603,50 @@ nav li {
     object-fit: cover;
   }
   #home .info .title {
-    font-family: 'Friday', 'Kollektif';
-  }
-
-  #home .info img {
-    height: 30rem;
-    margin-top: 3rem;
-    width: auto;
+    font-family: 'Kollektif','Lato';
   }
   #home .info {
     margin-top: 1rem;
   }
 
-  #home .subject {
+  .half-display {
     display: flex;
-    margin:7rem;
+    margin-bottom:7rem;
     margin-top: 0;
+    background-color: #0a5c8f;
+    color: white;
+    width: 100%;
+  }
+  .half-box-1 {
+    width: 60%;
+  }
+  .half-box-1 img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+  .half-box-2 {
+    display: flex;
+    align-items: center;
+    width: 40%;
   }
 
   .info p {
-    margin-top: 12rem;
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
-  .order .title {
-    right: 5%;
-    margin-top: 3rem;
-    color: white;
-    background-color: #c4d4e7;
-}
-    .order .title, .advantage .title {
+
+    .midtitle {
     font-size: 5rem;
-    position: absolute;
+    font-family: 'kollektif';
+  }
+  .kollektif {
+    font-family: 'kollektif';
+    font-size: 2.5rem;
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .info {
-      margin: 2rem;
       display: block;
       margin-top: 90px;
     }
@@ -575,13 +657,8 @@ nav li {
     .info span {
       display: block;
     }
-    #home .info {
-      margin: 2rem;
-      padding: 0;
-    }
     .info .title {
       font-size: 3rem;
-      letter-spacing: 0.6rem;
       padding: 1.5rem;
       position: relative;
       width: 100%;
@@ -605,54 +682,49 @@ nav li {
       margin: 1rem;
       text-align: center;
     }
-    .order .title {
-      padding: 0.5rem;
-      right: 0;
-    }
-    #home .subject {
+    .half-display {
       display: block;
+    }
+    .half-box-1, .half-box-2 {
+      width: 100%;
     }
   }
 
   @media only screen and (min-width: 1500px) {
-    .order .title {
-      right: 20%;
-    }
-    .order {
-      margin: auto;
-    }
     html {
       font-size: 16px;
     }
-    .subject {
-      padding: 3rem;
+    .info {
+      max-width: none;
     }
-    #home .subject {
-      margin: 0;
+    .info p {
+      font-size: 1.5rem;
     }
-    .advantage .title {
-      left: 20%;
+    .kollektif {
+      font-size: 4rem;
     }
   }
 
 /* Advantages */
 
+
 .info .title {
-  font-family: 'Friday', 'Kollektif';
-  letter-spacing: 0.8rem;
+  font-family: 'Kollektif','Lato';
+  padding: 1rem;
+}
+.advantage i {
+  font-size: 3.5rem;
   padding: 1rem;
 }
 
-  .advantage .title {
-    left: 10%;
-  }
-
   .advantage {
     padding: 0;
+    padding-top: 4rem;
     border: none;
-    display: flex;
     margin: auto;
     margin-top:7rem 0;
+    background-color: #333;
+    color: white;
   }
   .advantage .text-content {
     padding: 4rem;
@@ -664,8 +736,7 @@ nav li {
   .advantage-box {
     display: flex;
     justify-content: center;
-    padding: 0;
-    padding-top: 8rem;
+    padding-top: 0;
   }
   .advantage-content span {
     font-size: 2rem;
@@ -680,6 +751,7 @@ nav li {
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .advantage {
       display: block;
+      width: 100%;
     }
     .advantage-content {
       width: 100%;
@@ -693,20 +765,11 @@ nav li {
     .advantage-content .text-content {
       padding: 1rem;
     }
-    .advantage .title {
-      left: 0;
-      margin: 0;
-    }
-    .advantage .title, .order .title {
-      background-color: white;
-      color: black;
-      font-size: 2.5rem;
-    }
   }
 
   @media only screen and (min-width: 1500px) {
-    .advantage .title {
-      left: 20%;
+    .advantage-content {
+      width: 25%;
     }
   }
 
@@ -951,6 +1014,7 @@ nav li {
 
   .subtitle {
     display: block;
+    font-size: 3rem;
   }
 
   .vid {
