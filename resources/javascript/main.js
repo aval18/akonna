@@ -19,9 +19,13 @@ function closeShop() {
 }
 
 // Activate Carousel
+$(document).ready(function() {
+  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
+});
+
 $(document).ready(function(){
   // Activate Carousel
-  $("#myCarousel1").carousel();
+  $("#myCarousel1").carousel({interval: 7000});
 
   // Enable Carousel Indicators
   $(".item1").click(function(){
@@ -32,6 +36,12 @@ $(document).ready(function(){
   });
   $(".item3").click(function(){
     $("#myCarousel1").carousel(2);
+  });
+  $(".item4").click(function(){
+    $("#myCarousel1").carousel(3);
+  });
+  $(".item5").click(function(){
+    $("#myCarousel1").carousel(4);
   });
 
   // Enable Carousel Controls
@@ -46,7 +56,7 @@ $(document).ready(function(){
 // Activate Carousel
 $(document).ready(function(){
   // Activate Carousel
-  $("#myCarousel2").carousel();
+  $("#myCarousel2").carousel({interval: 7000});
 
   // Enable Carousel Indicators
   $(".item1").click(function(){

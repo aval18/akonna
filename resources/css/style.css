@@ -383,18 +383,18 @@ nav li {
   background-size: cover;
 }
 .parallax-page1 {
-  background-image: url("../images/blue-2.jpg");
+  background-image: url("../images/blue-1.jpg");
   background-position: bottom;
 }
 .parallax-page2 {
   background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/tote-leaf.jpg");
 }
 .parallax-page3 {
-  background-image: url("../images/patch-group-edit.jpg");
+  background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/patch-group-edit.JPG");
   background-position: 0 40%;
 }
 .parallax-page4 {
-  background-image: url("../images/holiday-market.JPG");
+  background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/holiday-market.jpg");
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -550,14 +550,15 @@ nav li {
     .carousel-inner p {
       padding-top: 0;
     }
-    .carousel-inner>.item>img {
+    .carousel-inner>.item> a img {
       padding: 3rem;
       height: 30rem;
       width: 100%;
       object-fit: cover;
     }
     .carousel .text-content {
-      padding-top: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
     .carousel-control.right, .carousel-control.left{
       background-image: none;
@@ -570,6 +571,11 @@ nav li {
     .carousel-caption {
       text-shadow: none;
     }
+    .carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
   }
   @media only screen and (min-width: 1500px){
 
@@ -664,11 +670,6 @@ nav li {
       width: 100%;
       margin: auto;
     }
-    #home .info img {
-      height: 15rem;
-      width: 100%;
-      margin: 0;
-    }
     #home .subject, .info .subject {
       width: 100%;
       margin: auto;
@@ -704,6 +705,116 @@ nav li {
       font-size: 4rem;
     }
   }
+
+/* Canada overlay section */
+
+.section-overlay {
+  display: flex;
+  margin-bottom: 54rem;
+  justify-content: center;
+}
+.overlay-text {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  padding-top: 3rem;
+}
+.section-overlay .text-content {
+  padding-top: 0;
+}
+
+.overlay-text-left, .overlay-text-left .text-content {
+  text-align: right;
+}
+.overlay-text-right, .overlay-text-right .text-content {
+  text-align: left;
+}
+.overlay-text-left {
+  left: 7%;
+}
+.overlay-text-right{
+  right: 6%;
+}
+
+.overlay-text-left p, .overlay-text-left .btn, .overlay-text-right p, .overlay-text-right .btn{
+  padding: 2rem 7rem 0 7rem;
+}
+.overlay-img {
+  position: absolute;
+}
+.overlay-img-right {
+  right: 16%;
+}
+.overlay-img-left {
+  left: 18%;
+}
+.overlay-img img {
+  width: 35rem;
+  height: 45rem;
+  object-fit: cover;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+
+  .section-overlay {
+    margin-bottom: 7rem;
+
+  }
+  .midtitle {
+    font-size: 3rem;
+  }
+  .overlay-img img {
+    width: 90%;
+    height: 40rem;
+    object-fit: cover;
+  }
+  .overlay-img-left,.overlay-img-right {
+    left:0;
+    right:0;
+  }
+
+  .overlay-text-left p, .overlay-text-right p{
+    padding: 0
+  }
+  .overlay-text {
+    width: 90%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    padding: 0;
+    color:white;
+    padding-top: 2rem;
+  }
+  .section-overlay .btn {
+    padding: 0;
+    display: block;
+    padding-top: 2rem
+  }
+  .section-overlay .text-content {
+    padding-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .overlay-img-left {
+    left: 27%
+  }
+  .overlay-img-right {
+    right: 26%;
+  }
+  .overlay-text-right p, .overlay-text-right .btn{
+    padding-left: 10rem;
+    padding-right: 20rem
+  }
+  .overlay-text-left p, .overlay-text-left .btn {
+    padding-left: 20rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* Advantages */
 
