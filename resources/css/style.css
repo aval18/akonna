@@ -30,6 +30,14 @@
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: 'Libre Barcode 39 Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebarcode39text/v14/sJoa3KhViNKANw_E3LwoDXvs5Un0HQ1vT-0H0h5K2dnIag.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* Universal */
 
@@ -169,6 +177,9 @@ nav li {
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .mobile {
     display: block;
+  }
+  .desktop {
+    display: none;
   }
   header {
     display: flex;
@@ -323,6 +334,8 @@ nav li {
 
 .jumbotron p {
   font-size: 1.3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .jumbotron img {
@@ -340,7 +353,7 @@ nav li {
 .jumbotron-inside {
   background-color: white;
   width: 35rem;
-  height: 25rem;
+  height: 22rem;
   margin: auto;
   margin-top: 14rem;
   margin-bottom: 9rem;
@@ -400,7 +413,7 @@ nav li {
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   #home .jumbotron-inside {
     margin: 0;
-    height: 20rem;
+    height: 18rem;
     width: 100%;
   }
   #home .text-content {
@@ -412,12 +425,15 @@ nav li {
   #home .jumbotron .title {
     font-size: 2rem;
   }
+  #home .jumbotron .text-content {
+    padding-bottom: 0;
+  }
   #home {
     padding: 0;
   }
   .jumbotron p {
-    margin-bottom: 1rem;
     font-size: 1rem;
+    padding-bottom: 0;
   }
   .jumbotron {
     background-image: none;
@@ -453,10 +469,14 @@ nav li {
 
   .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 30rem;
     position: relative;
+    color: black;
+  }
+  .gallery .text-content {
+    text-align: left;
   }
 
   .gallery span {
@@ -465,7 +485,7 @@ nav li {
   }
   .gallery a:hover {
     text-decoration: none;
-    color: white;
+    color: #0a5c8f;
     transition: 0.3s;
   }
 
@@ -502,6 +522,8 @@ nav li {
   .gallery {
     margin: 0;
     height: 12rem;
+    justify-content: center;
+    align-items: center;
   }
   .gallery i {
     display: none;
@@ -565,8 +587,9 @@ nav li {
 
     }
     .glyphicon {
-      color: #333;
       text-shadow: none;
+      color: black;
+      opacity: 0.6;
     }
     .carousel-caption {
       text-shadow: none;
@@ -730,10 +753,11 @@ nav li {
   text-align: left;
 }
 .overlay-text-left {
-  left: 7%;
+  margin-right: 40rem;
 }
+
 .overlay-text-right{
-  right: 6%;
+  margin-left: 40rem;
 }
 
 .overlay-text-left p, .overlay-text-left .btn, .overlay-text-right p, .overlay-text-right .btn{
@@ -780,7 +804,7 @@ nav li {
   .overlay-text {
     width: 90%;
     position: relative;
-    left: 0;
+    margin: 0;
     text-align: center;
     padding: 0;
     color:white;
@@ -826,6 +850,7 @@ nav li {
 .advantage i {
   font-size: 3.5rem;
   padding: 1rem;
+  color: #0a5c8f;
 }
 
   .advantage {
@@ -834,8 +859,6 @@ nav li {
     border: none;
     margin: auto;
     margin-top:7rem 0;
-    background-color: #333;
-    color: white;
   }
   .advantage .text-content {
     padding: 4rem;
@@ -858,6 +881,11 @@ nav li {
     margin: 0;
     line-height: 2rem;
   }
+  .libre {
+    color: #0a5c8f;
+    font-size: 5rem;
+    font-family: 'Libre Barcode 39 Text';
+  }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
     .advantage {
@@ -875,6 +903,9 @@ nav li {
     }
     .advantage-content .text-content {
       padding: 1rem;
+    }
+    .libre {
+      font-size: 2.8rem;
     }
   }
 
@@ -1041,9 +1072,6 @@ nav li {
   }
 
   @media only screen and (min-width: 300px) and (max-width: 900px) {
-    .desktop {
-      display: none!;
-    }
     .mobile {
       display: block;
     }
