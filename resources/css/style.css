@@ -324,12 +324,12 @@ nav li {
 .jumbotron {
   margin: 0;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   margin-top: 100px;
 }
 
 #home .jumbotron {
-  background-image: url("../images/pinetree-tote.jpg");
+  background-image: url("../images/pinetree-hoodie.jpg");
 }
 
 .jumbotron p {
@@ -351,11 +351,10 @@ nav li {
 }
 
 .jumbotron-inside {
-  background-color: white;
   width: 35rem;
   height: 22rem;
   margin: auto;
-  margin-top: 14rem;
+  margin-top: 7rem;
   margin-bottom: 9rem;
   margin-right: 10rem;
   text-align: center;
@@ -410,11 +409,12 @@ nav li {
   background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/holiday-market.jpg");
 }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   #home .jumbotron-inside {
     margin: 0;
-    height: 18rem;
+    height: 25rem;
     width: 100%;
+    color: white;
   }
   #home .text-content {
     line-height: 2rem;
@@ -427,6 +427,8 @@ nav li {
   }
   #home .jumbotron .text-content {
     padding-bottom: 0;
+    text-align: right;
+    padding-top: 16rem;
   }
   #home {
     padding: 0;
@@ -436,9 +438,7 @@ nav li {
     padding-bottom: 0;
   }
   .jumbotron {
-    background-image: none;
-    margin-top: 80px;
-    padding: 0;
+    margin-top: 0;
   }
   .jumbotron img {
     display: block;
@@ -553,13 +553,20 @@ nav li {
     text-align: center;
     padding: 1.5rem;
     font-size: 1.5rem;
-    font-family: 'Kollektif','Lato';
+    font-family: 'Lato';
   }
   .feature .text-content {
     padding-top: 0;
   }
   .carousel {
     display: none;
+  }
+  .feature-box a {
+    font-family: 'Lato';
+  }
+  .feature-box a:hover {
+    font-weight: bold;
+    text-decoration: none;
   }
 
   @media only screen and (min-width:300px) and (max-width:900px) {
