@@ -362,10 +362,17 @@ nav li {
   align-items: center;
   justify-content: center;
 }
+.jumbotron .btn a {
+  color: white;
+  background-color: none;
+}
 
-.btn a {
+.jumbotron .btn a:hover {
   background-color: #ececec;
   color: black;
+}
+
+.btn a {
   border: none;
   border-radius: 2rem;
   border: 2px solid #ececec;
@@ -376,6 +383,13 @@ nav li {
   text-decoration: none;
   background-color: white;
   transition: 0.2s;
+}
+.info .btn a {
+  background-color: #ececec;
+  color: black;
+}
+.info .btn a:hover {
+  background-color: white;
 }
 
 .parallax-inside {
@@ -439,6 +453,7 @@ nav li {
   }
   .jumbotron {
     margin-top: 0;
+    margin-bottom: 3rem;
   }
   .jumbotron img {
     display: block;
@@ -471,7 +486,7 @@ nav li {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 30rem;
+    height: 40rem;
     position: relative;
     color: black;
   }
@@ -499,7 +514,7 @@ nav li {
   .background {
     background-size: 100%;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -513,6 +528,9 @@ nav li {
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .insta {
     background-attachment: scroll;
+    background-image: url("../images/monstera-hoodie-green-1.jpg");
+    height: 35rem;
+    object-fit: cover;
   }
   .gallery span {
     font-size: 1.5rem;
@@ -521,12 +539,15 @@ nav li {
   }
   .gallery {
     margin: 0;
-    height: 12rem;
     justify-content: center;
     align-items: center;
   }
   .gallery i {
     display: none;
+  }
+  .gallery .text-content {
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -552,8 +573,10 @@ nav li {
   .feature-box p, .carousel-inner p {
     text-align: center;
     padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Lato';
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
   .feature .text-content {
     padding-top: 0;
@@ -576,11 +599,16 @@ nav li {
     .carousel {
       display: block;
     }
+    .carousel-control {
+      opacity: 1;
+    }
     .carousel-inner p {
       padding-top: 0;
+      font-size: 1.1rem;
     }
     .carousel-inner>.item> a img {
       padding: 3rem;
+      padding-bottom: 0;
       height: 30rem;
       width: 100%;
       object-fit: cover;
@@ -593,10 +621,30 @@ nav li {
       background-image: none;
 
     }
-    .glyphicon {
+    .carousel-control .fas {
       text-shadow: none;
       color: black;
-      opacity: 0.6;
+      opacity: 1;
+      position: relative;
+    top: 1px;
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+    }
+    .carousel-control .fa-chevron-left {
+      left: 50%;
+      margin-left: -10px;
+    }
+    .carousel-control .fa-chevron-right {
+      right: 50%;
+      margin-right: -10px;
+    }
+    .carousel-control .fa-chevron-right, .carousel-control .fa-chevron-left {
+      position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
     }
     .carousel-caption {
       text-shadow: none;
@@ -606,7 +654,8 @@ nav li {
   transition: transform 2s ease;
   transition: transform 2s ease, -webkit-transform 2s ease;
 }
-  }
+}
+
   @media only screen and (min-width: 1500px){
 
       .gallery, .feature{
@@ -630,6 +679,7 @@ nav li {
     text-align: center;
     max-width: 1500px;
   }
+
   .subject {
     padding: 2rem;
   }
@@ -789,7 +839,7 @@ nav li {
 @media only screen and (min-width: 300px) and (max-width: 900px) {
 
   .section-overlay {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 
   }
   .midtitle {
@@ -824,6 +874,9 @@ nav li {
   }
   .section-overlay .text-content {
     padding-top: 15rem;
+  }
+  .half-display {
+    margin-bottom: 5rem;
   }
 }
 
