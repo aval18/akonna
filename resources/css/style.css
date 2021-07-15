@@ -541,6 +541,7 @@ nav li {
     margin: 0;
     justify-content: center;
     align-items: center;
+    height: 35rem;
   }
   .gallery i {
     display: none;
@@ -1363,6 +1364,9 @@ nav li {
     }
     footer a:hover {
       text-decoration: none;
+    }
+    footer .kollektif {
+      font-size: 1.5rem;
     }
 
 @media only screen and (min-width: 300px) and (max-width: 900px) {
