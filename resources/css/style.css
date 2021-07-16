@@ -416,7 +416,7 @@ nav li {
   background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/tote-leaf.jpg");
 }
 .parallax-page3 {
-  background-image: url("https://raw.githubusercontent.com/aval18/akonna/master/resources/images/patch-group-edit.JPG");
+  background-image: url("../images/cloud-hoodie.jpg");
   background-position: 0 40%;
 }
 .parallax-page4 {
@@ -446,6 +446,9 @@ nav li {
   }
   #home {
     padding: 0;
+  }
+  #home .jumbotron {
+    background-position: 10%;
   }
   .jumbotron p {
     font-size: 1rem;
@@ -497,6 +500,7 @@ nav li {
   .gallery span {
     padding: 2rem;
     font-weight: bold;
+    padding-top: 25rem;
   }
   .gallery a:hover {
     text-decoration: none;
@@ -582,9 +586,6 @@ nav li {
   .feature .text-content {
     padding-top: 0;
   }
-  .carousel {
-    display: none;
-  }
   .feature-box a {
     font-family: 'Lato';
   }
@@ -593,69 +594,77 @@ nav li {
     text-decoration: none;
   }
 
-  @media only screen and (min-width:300px) and (max-width:900px) {
+  .carousel-inner>.item> a img {
+    padding: 3rem;
+    padding-bottom: 0;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel .text-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .carousel-control.right, .carousel-control.left{
+    background-image: none;
+
+  }
+  .carousel-control .fas {
+    text-shadow: none;
+    color: black;
+    opacity: 1;
+    position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  line-height: 1;
+  }
+  .carousel-control .fa-chevron-left {
+    left: 50%;
+    margin-left: -10px;
+  }
+  .carousel-control .fa-chevron-right {
+    right: 50%;
+    margin-right: -10px;
+  }
+  .carousel-control .fa-chevron-right, .carousel-control .fa-chevron-left {
+    position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+  }
+  .carousel-caption {
+    text-shadow: none;
+  }
+  .carousel-inner .carousel-item {
+transition: -webkit-transform 2s ease;
+transition: transform 2s ease;
+transition: transform 2s ease, -webkit-transform 2s ease;
+}
+.carousel-control {
+  opacity: 1;
+}
+.carousel {
+  display: none;
+}
+  @media only screen and (max-width: 900px) {
     .feature {
       display: none;
     }
     .carousel {
       display: block;
     }
-    .carousel-control {
-      opacity: 1;
-    }
     .carousel-inner p {
       padding-top: 0;
       font-size: 1.1rem;
     }
     .carousel-inner>.item> a img {
-      padding: 3rem;
-      padding-bottom: 0;
       height: 30rem;
-      width: 100%;
-      object-fit: cover;
     }
-    .carousel .text-content {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-    .carousel-control.right, .carousel-control.left{
-      background-image: none;
 
-    }
-    .carousel-control .fas {
-      text-shadow: none;
-      color: black;
-      opacity: 1;
-      position: relative;
-    top: 1px;
-    display: inline-block;
-    font-style: normal;
-    line-height: 1;
-    }
-    .carousel-control .fa-chevron-left {
-      left: 50%;
-      margin-left: -10px;
-    }
-    .carousel-control .fa-chevron-right {
-      right: 50%;
-      margin-right: -10px;
-    }
-    .carousel-control .fa-chevron-right, .carousel-control .fa-chevron-left {
-      position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
-    margin-top: -10px;
-    }
-    .carousel-caption {
-      text-shadow: none;
-    }
-    .carousel-inner .carousel-item {
-  transition: -webkit-transform 2s ease;
-  transition: transform 2s ease;
-  transition: transform 2s ease, -webkit-transform 2s ease;
 }
-}
+
 
   @media only screen and (min-width: 1500px){
 
