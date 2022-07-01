@@ -108,7 +108,7 @@ header {
 
 
 .menu a:hover {
-  border-bottom: 2px solid #0a5c8f;
+  border-bottom: 2px solid #3A6152;
   text-decoration: none;
   color: black;
 }
@@ -136,18 +136,15 @@ nav li {
 }
 
 .logo img {
-  width: 4rem;
+  width: 5rem;
 }
 
 .logo {
   padding-left: 15rem;
   font-family: 'Kollektif','Lato';
   font-size: 3rem;
-  color: #0a5c8f;
 }
-.logo a {
-  color: #0a5c8f;
-}
+
 .logo a:hover {
   text-decoration: none;
 }
@@ -223,7 +220,7 @@ nav li {
     z-index: 4;
     top: 0;
     right: 0;
-    background-color: #ececec;
+    background-color: #F4F0ED;
     transition: 0.6s;
   }
   .o {
@@ -249,7 +246,7 @@ nav li {
     font-size: 1rem;
     letter-spacing: 0.3rem;
     padding: 0;
-    background-color: #ececec;
+    background-color: #F4F0ED;
   }
   .mobile-overlay a:hover {
     text-decoration: none;
@@ -263,7 +260,7 @@ nav li {
     padding-right: 1rem;
     left: 0;
     top: 0;
-    background-color: #ececec;
+    background-color: #F4F0ED;
   }
   .backbtn {
     position: absolute;
@@ -368,14 +365,14 @@ nav li {
 }
 
 .jumbotron .btn a:hover {
-  background-color: #ececec;
+  background-color: #F4F0ED;
   color: black;
 }
 
 .btn a {
   border: none;
   border-radius: 2rem;
-  border: 2px solid #ececec;
+  border: 2px solid #F4F0ED;
   padding: 1rem;
 }
 
@@ -385,7 +382,7 @@ nav li {
   transition: 0.2s;
 }
 .info .btn a {
-  background-color: #ececec;
+  background-color: #F4F0ED;
   color: black;
 }
 .info .btn a:hover {
@@ -504,7 +501,7 @@ nav li {
   }
   .gallery a:hover {
     text-decoration: none;
-    color: #0a5c8f;
+    color: #3A6152;
     transition: 0.3s;
   }
 
@@ -709,8 +706,8 @@ transition: transform 2s ease, -webkit-transform 2s ease;
     display: flex;
     margin-bottom:7rem;
     margin-top: 0;
-    background-color: #0a5c8f;
-    color: white;
+    background-color: #F4F0ED;
+    color: #3A6152;
     width: 100%;
   }
   .half-box-1 {
@@ -952,7 +949,6 @@ transition: transform 2s ease, -webkit-transform 2s ease;
     line-height: 2rem;
   }
   .libre {
-    color: #0a5c8f;
     font-size: 5rem;
     font-family: 'Libre Barcode 39 Text';
   }

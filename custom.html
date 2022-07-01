@@ -19,63 +19,63 @@
   <body>
 
 <!-- Header -->
-    <header id="header">
-      <nav>
-        <div class="logo">
-          <img src="resources/images/logo.png" alt="Logo">
-          <span><a href="index.html">akonna</a></span>
+<header id="header">
+  <nav>
+    <div class="logo">
+      <img src="resources/images/logo-new.png" alt="Logo">
+      <span><a href="index.html">akonna</a></span>
+    </div>
+    <div class="menu">
+      <ul class="lato">
+        <div class="dropdown">
+          <button class="dropbtn">SHOP
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <!--<a href="https://akonna.square.site" target="_blank">shop akonna</a>-->
+            <a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">shop on etsy</a>
+          <!--  <a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">gift card</a>-->
+          </div>
         </div>
-        <div class="menu">
+        <li><a href="custom.html">custom</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="events.html">events</a></li>
+      </ul>
+    </div>
+
+    <a href="javascript:void(0)" class="open" style="font-size: 2rem"onclick="openNav()">&#9776;</a>
+
+  </nav>
+</header>
+
+<div class="mobile-overlay" id="mobile">
+  <div class="overlay-content mobile-overlay-main">
+    <ul class="lato">
+      <li><button class="dropbtn" onclick="openShop()">SHOP
+        <i class="fas fa-angle-double-right"></i>
+      </button></li>
+      <div class="o" id="mobileShop">
+        <div class="overlay-content">
+          <a class="backbtn" style="border-bottom:none;color:black;font-size:0.7rem;" onclick="closeShop()">
+            <i class="fas fa-angle-double-left"></i>
+            BACK
+          </a>
           <ul class="lato">
-            <div class="dropdown">
-              <button class="dropbtn">SHOP
-                <i class="fas fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="https://akonna.square.site" target="_blank">shop akonna</a>
-                <a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">shop on etsy</a>
-                <a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">gift card</a>
-              </div>
-            </div>
-            <li><a href="custom.html">custom</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="events.html">events</a></li>
+            <!--<li><a href="https://akonna.square.site" target="_blank">SHOP AKONNA</a></li>-->
+            <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">SHOP ON ETSY</a></li>
+            <!--<li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">GIFT CARD</a></li>-->
           </ul>
         </div>
-
-        <a href="javascript:void(0)" class="open" style="font-size: 2rem"onclick="openNav()">&#9776;</a>
-
-      </nav>
-    </header>
-
-    <div class="mobile-overlay" id="mobile">
-      <div class="overlay-content mobile-overlay-main">
-        <ul class="lato">
-          <li><button class="dropbtn" onclick="openShop()">SHOP
-            <i class="fas fa-angle-double-right"></i>
-          </button></li>
-          <div class="o" id="mobileShop">
-            <div class="overlay-content">
-              <a class="backbtn" style="border-bottom:none;color:black;font-size:0.7rem;" onclick="closeShop()">
-                <i class="fas fa-angle-double-left"></i>
-                BACK
-              </a>
-              <ul class="lato">
-                <li><a href="https://akonna.square.site" target="_blank">SHOP AKONNA</a></li>
-                <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">SHOP ON ETSY</a></li>
-                <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">GIFT CARD</a></li>
-              </ul>
-            </div>
-          </div>
-          <li><a href="custom.html"onclick="closeNav()">CUSTOM</a></li>
-          <li><a href="about.html"onclick="closeNav()">ABOUT</a></li>
-          <li><a href="contact.html"onclick="closeNav()">CONTACT</a></li>
-          <li><a href="events.html"onclick="closeNav()">EVENTS</a></li>
-        </ul>
       </div>
-      <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
-    </div>
+      <li><a href="custom.html"onclick="closeNav()">CUSTOM</a></li>
+      <li><a href="about.html"onclick="closeNav()">ABOUT</a></li>
+      <li><a href="contact.html"onclick="closeNav()">CONTACT</a></li>
+      <li><a href="events.html"onclick="closeNav()">EVENTS</a></li>
+    </ul>
+  </div>
+  <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
+</div>
 
 
     <!-- Custom -->
@@ -85,7 +85,7 @@
               <span class="title">custom orders</span>
             </div>
           </div>
-          
+
           <div class="section">
             <div class="detail">
               <div class="text-content">
@@ -120,45 +120,46 @@
           <div class="typeform-widget" data-url="https://ava880070.typeform.com/to/BciUiW" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 600px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=BciUiW&utm_source=typeform.com-14464713-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 
 <!-- footer -->
-          <footer>
-            <div class="footer-content">
-              <div class="logo">
-                <img src="resources/images/logo.png" alt="Logo">
-                <span>akonna</span>
-              </div>
-              <div class="footer-section">
-                <div class="footer-box">
-                  <div class="colour-box-small"></div>
-                  <span>Social</span>
-                  <ul>
-                    <li><a href="https://www.instagram.com/shopakonna" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/pg/shopakonna/shop" target="_blank">Facebook</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-                <div class="footer-box">
-                  <div class="colour-box-small"></div>
-                  <span>Shop</span>
-                  <ul>
-                    <li><a href="https://akonna.square.site" target="_blank">Akonna</a></li>
-                    <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">Etsy</a></li>
-                    <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">Gift Card</a></li>
-                  </ul>
-                </div>
-                <div class="footer-box">
-                  <div class="colour-box-small"></div>
-                  <span>Learn</span>
-                  <ul>
-                    <li><a href="custom.html">Custom</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <p>©2021 AKONNA</p>
-          </footer>
+<footer>
+  <div class="footer-content">
+    <div class="logo">
+      <img src="resources/images/logo-new.png" alt="Logo">
+      <span>akonna</span>
+    </div>
+    <div class="footer-section">
+      <div class="footer-box">
+        <div class="colour-box-small"></div>
+        <span>Shop</span>
+        <ul>
+        <!--  <li><a href="https://akonna.square.site" target="_blank">Akonna</a></li> -->
+          <li><a href="https://www.etsy.com/ca/shop/shopakonna" target="_blank">Etsy</a></li>
+        <!--  <li><a href="https://squareup.com/gift/4EJ130XCA65FB/order" target="_blank">Gift Card</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-box">
+        <div class="colour-box-small"></div>
+        <span>Social</span>
+        <ul>
+          <li><a href="https://www.instagram.com/shopakonna" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/pg/shopakonna/shop" target="_blank">Facebook</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
+      <div class="footer-box">
+        <div class="colour-box-small"></div>
+        <span>Learn</span>
+        <ul>
+          <li><a href="custom.html">Custom</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="kollektif">I coded this website myself! :)</p>
+  <p>©2022 AKONNA</p>
+</footer>
         </div>
 
       </body>
